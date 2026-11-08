@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  admitflow-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: admitflow-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - JWT_SECRET=admitflow-super-secure-production-key-2026
+      - DATABASE_URL=postgresql://postgres:postgrespassword@postgres:5432/admitflow
+    depends_on:
+      - postgres
+    volumes:
+      - ./data:/app/data
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: admitflow-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_DB: admitflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./admitflow_postgres_schema.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  postgres_data:

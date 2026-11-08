@@ -1,0 +1,1731 @@
+{
+  "institutes": [
+    {
+      "id": "inst-apex-001",
+      "name": "Apex Academy (IIT-JEE & NEET)",
+      "slug": "apex-academy",
+      "email": "admissions@apexacademy.in",
+      "phone": "+91-744-2391000",
+      "website": "https://apexacademy.in",
+      "aiTone": "helpful_professional",
+      "welcomeMessage": "Namaste! Welcome to Apex Academy. Are you preparing for IIT-JEE or NEET? Ask me about our courses, scholarship tests, or fee structures!",
+      "currency": "INR",
+      "address": "Kota, Rajasthan",
+      "createdAt": "2026-01-10T10:00:00Z",
+      "updatedAt": "2026-01-10T10:00:00Z"
+    },
+    {
+      "id": "inst-codecraft-002",
+      "name": "CodeCraft AI Academy",
+      "slug": "codecraft-ai",
+      "email": "hello@codecraft.tech",
+      "phone": "+91-80-49001200",
+      "website": "https://codecraft.tech",
+      "aiTone": "energetic",
+      "welcomeMessage": "Hey there! Ready to level up your engineering career with Full Stack & AI? Ask me about our curriculum and placement guarantee!",
+      "currency": "INR",
+      "address": "Bengaluru, Karnataka",
+      "createdAt": "2026-01-01T10:00:00Z",
+      "updatedAt": "2026-01-01T10:00:00Z"
+    }
+  ],
+  "branches": [
+    {
+      "id": "branch-apex-kota",
+      "instituteId": "inst-apex-001",
+      "name": "Kota Head Campus",
+      "city": "Kota",
+      "address": "Road No. 1, Indraprastha Industrial Area, Kota, Rajasthan",
+      "phone": "+91-744-2391000",
+      "email": "kota@apexacademy.in",
+      "isHeadquarters": true,
+      "createdAt": "2026-01-10T10:00:00Z"
+    },
+    {
+      "id": "branch-apex-jaipur",
+      "instituteId": "inst-apex-001",
+      "name": "Jaipur Gopalpura Center",
+      "city": "Jaipur",
+      "address": "Plot 42, Gopalpura Bypass Road, Jaipur, Rajasthan",
+      "phone": "+91-141-2780000",
+      "email": "jaipur@apexacademy.in",
+      "isHeadquarters": false,
+      "createdAt": "2026-02-15T10:00:00Z"
+    },
+    {
+      "id": "branch-apex-delhi",
+      "instituteId": "inst-apex-001",
+      "name": "Delhi South Ext Center",
+      "city": "New Delhi",
+      "address": "E-12, South Extension Part 1, New Delhi",
+      "phone": "+91-11-45600000",
+      "email": "delhi@apexacademy.in",
+      "isHeadquarters": false,
+      "createdAt": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": "branch-codecraft-blr",
+      "instituteId": "inst-codecraft-002",
+      "name": "Bengaluru HSR Hub",
+      "city": "Bengaluru",
+      "address": "27th Main Rd, Sector 1, HSR Layout, Bengaluru",
+      "phone": "+91-80-49001200",
+      "email": "blr@codecraft.tech",
+      "isHeadquarters": true,
+      "createdAt": "2026-01-01T10:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-admin-01",
+      "instituteId": "inst-apex-001",
+      "name": "Rajesh Sharma",
+      "email": "rajesh@apexacademy.in",
+      "passwordHash": "$2b$10$wq5YHA4Mb6qRpIK41v8Lsun/8eFFYCyAgSLYcbF.5U7Gy9h5wArPq",
+      "role": "INSTITUTE_OWNER",
+      "phone": "+91-9829012345",
+      "isActive": true,
+      "createdAt": "2026-01-10T10:00:00Z"
+    },
+    {
+      "id": "user-counsellor-01",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "name": "Priya Joshi",
+      "email": "priya@apexacademy.in",
+      "passwordHash": "$2b$10$wq5YHA4Mb6qRpIK41v8Lsun/8eFFYCyAgSLYcbF.5U7Gy9h5wArPq",
+      "role": "ADMISSION_COUNSELLOR",
+      "phone": "+91-9829099887",
+      "isActive": true,
+      "createdAt": "2026-01-12T10:00:00Z"
+    },
+    {
+      "id": "user-counsellor-02",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-jaipur",
+      "name": "Amit Verma",
+      "email": "amit@apexacademy.in",
+      "passwordHash": "$2b$10$wq5YHA4Mb6qRpIK41v8Lsun/8eFFYCyAgSLYcbF.5U7Gy9h5wArPq",
+      "role": "ADMISSION_COUNSELLOR",
+      "phone": "+91-9829077665",
+      "isActive": true,
+      "createdAt": "2026-02-16T10:00:00Z"
+    },
+    {
+      "id": "user-manager-01",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-jaipur",
+      "name": "Sunil Rao",
+      "email": "sunil@apexacademy.in",
+      "passwordHash": "$2b$10$wq5YHA4Mb6qRpIK41v8Lsun/8eFFYCyAgSLYcbF.5U7Gy9h5wArPq",
+      "role": "BRANCH_MANAGER",
+      "phone": "+91-9829033442",
+      "isActive": true,
+      "createdAt": "2026-02-15T10:00:00Z"
+    },
+    {
+      "id": "user-codecraft-owner",
+      "instituteId": "inst-codecraft-002",
+      "name": "Pooja Verma",
+      "email": "pooja@codecraft.tech",
+      "passwordHash": "$2b$10$wq5YHA4Mb6qRpIK41v8Lsun/8eFFYCyAgSLYcbF.5U7Gy9h5wArPq",
+      "role": "INSTITUTE_OWNER",
+      "phone": "+91-9845012345",
+      "isActive": true,
+      "createdAt": "2026-01-01T10:00:00Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "course-jee-target",
+      "instituteId": "inst-apex-001",
+      "name": "Target JEE (Main + Advanced) 2027",
+      "code": "JEE-T27",
+      "category": "Engineering Test Prep",
+      "durationWeeks": 48,
+      "baseFee": 145000,
+      "minInstallmentFee": 40000,
+      "maxDiscountPct": 15,
+      "description": "Comprehensive 1-year classroom program covering complete Class 11 and 12 Physics, Chemistry, and Mathematics for JEE Advanced.",
+      "eligibility": "Class 12 studying or passed with minimum 75% in PCM",
+      "isActive": true,
+      "createdAt": "2026-01-11T10:00:00Z"
+    },
+    {
+      "id": "course-neet-achiever",
+      "instituteId": "inst-apex-001",
+      "name": "NEET Achiever Dropper Batch",
+      "code": "NEET-DRP",
+      "category": "Medical Test Prep",
+      "durationWeeks": 40,
+      "baseFee": 125000,
+      "minInstallmentFee": 35000,
+      "maxDiscountPct": 20,
+      "description": "Rigorous medical entrance prep with daily practice problems (DPP), NCERT line-by-line master sessions, and 45 full-length mock tests.",
+      "eligibility": "Class 12 passed with Physics, Chemistry, Biology",
+      "isActive": true,
+      "createdAt": "2026-01-11T10:00:00Z"
+    },
+    {
+      "id": "course-foundation-9-10",
+      "instituteId": "inst-apex-001",
+      "name": "Olympiad & NTSE Foundation (Class 9 & 10)",
+      "code": "FND-O910",
+      "category": "Junior Foundation",
+      "durationWeeks": 36,
+      "baseFee": 75000,
+      "minInstallmentFee": 25000,
+      "maxDiscountPct": 10,
+      "description": "Strengthen core fundamentals in Science and Math for Olympiads, NTSE, and early JEE/NEET orientation.",
+      "eligibility": "Students entering Class 9 or 10",
+      "isActive": true,
+      "createdAt": "2026-01-11T10:00:00Z"
+    },
+    {
+      "id": "course-codecraft-fs",
+      "instituteId": "inst-codecraft-002",
+      "name": "Full Stack AI Software Engineering Bootcamp",
+      "code": "FSAI-01",
+      "category": "Coding & Tech",
+      "durationWeeks": 24,
+      "baseFee": 85000,
+      "minInstallmentFee": 20000,
+      "maxDiscountPct": 10,
+      "description": "Learn Next.js, Node.js, Python, LLM orchestration, RAG, and cloud architecture with 1-on-1 industry mentorship.",
+      "eligibility": "Final year college or working professionals",
+      "isActive": true,
+      "createdAt": "2026-01-05T10:00:00Z"
+    }
+  ],
+  "batches": [
+    {
+      "id": "batch-jee-k1",
+      "courseId": "course-jee-target",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "batchName": "JEE Target Batch A1 (Morning)",
+      "startDate": "2026-11-20",
+      "timings": "08:00 AM - 01:30 PM",
+      "daysOfWeek": "Monday to Saturday",
+      "maxSeats": 50,
+      "enrolledCount": 42,
+      "status": "ENROLLING"
+    },
+    {
+      "id": "batch-jee-j1",
+      "courseId": "course-jee-target",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-jaipur",
+      "batchName": "JEE Target Jaipur Batch J1",
+      "startDate": "2026-11-25",
+      "timings": "09:00 AM - 02:30 PM",
+      "daysOfWeek": "Monday to Saturday",
+      "maxSeats": 45,
+      "enrolledCount": 28,
+      "status": "ENROLLING"
+    },
+    {
+      "id": "batch-neet-k1",
+      "courseId": "course-neet-achiever",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "batchName": "NEET Achiever Super 40 Batch",
+      "startDate": "2026-11-18",
+      "timings": "08:30 AM - 02:00 PM",
+      "daysOfWeek": "Monday to Saturday",
+      "maxSeats": 40,
+      "enrolledCount": 38,
+      "status": "ENROLLING"
+    }
+  ],
+  "knowledge_documents": [
+    {
+      "id": "doc-1794117236182",
+      "instituteId": "inst-codecraft-002",
+      "title": "CodeCraft AI 2026 Bootcamp Prospectus",
+      "fileType": "PDF",
+      "rawContent": "CODECRAFT AI ACADEMY 2026 OFFICIAL CURRICULUM & ADMISSION GUIDELINES\n1. Course: Full Stack AI Software Engineering Bootcamp (Duration: 24 weeks).\n2. Base Tuition Fee: ₹85,000 payable in 3 easy installments. First installment is ₹20,000 at enrollment.\n3. 100% Placement Guarantee: Students with >85% score in mock assessments get guaranteed interviews at top startups.\n4. Timings: Evening Batch starts at 7:00 PM to 9:30 PM (Mon-Fri) designed for working professionals and college students.\n5. Refund: 100% refund during the first 7 days trial period without questions asked.",
+      "chunkCount": 1,
+      "status": "INDEXED",
+      "createdAt": "2026-11-08T05:53:56.183Z"
+    },
+    {
+      "id": "doc-apex-brochure",
+      "instituteId": "inst-apex-001",
+      "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+      "fileType": "PDF",
+      "rawContent": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY\n1. Admission & Scholarship:\n- Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday.\n- Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security).\n2. Fee Payment & Installments:\n- Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession.\n- Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days.\n- Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days.\n3. Counseling & Trial Classes:\n- Free 3-day classroom demo pass provided to registered students.\n- 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM.\n4. Dropper NEET Batch Special Features:\n- Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern.",
+      "chunkCount": 4,
+      "status": "INDEXED",
+      "createdAt": "2026-01-12T10:00:00Z"
+    }
+  ],
+  "document_chunks": [
+    {
+      "id": "chunk-apex-1",
+      "documentId": "doc-apex-brochure",
+      "instituteId": "inst-apex-001",
+      "chunkIndex": 0,
+      "content": "Apex Academy Admission & Scholarship: Direct admission based on marks or ATSE exam. Up to 90% scholarship available. Hostel & Mess available in Kota at ₹12,000/month with single/twin rooms and security.",
+      "keywords": [
+        "scholarship",
+        "atse",
+        "hostel",
+        "mess",
+        "kota",
+        "fees",
+        "living"
+      ]
+    },
+    {
+      "id": "chunk-apex-2",
+      "documentId": "doc-apex-brochure",
+      "instituteId": "inst-apex-001",
+      "chunkIndex": 1,
+      "content": "Fee Payment & Installments: 3 equal installments. 5% early bird discount on one-time payment. Target JEE 2027 base fee is ₹1,45,000. NEET Achiever dropper batch base fee is ₹1,25,000.",
+      "keywords": [
+        "fee",
+        "installments",
+        "discount",
+        "payment",
+        "target jee",
+        "neet fee"
+      ]
+    },
+    {
+      "id": "chunk-apex-3",
+      "documentId": "doc-apex-brochure",
+      "instituteId": "inst-apex-001",
+      "chunkIndex": 2,
+      "content": "Refund Policy: 100% refund (minus ₹2,000 admin fee) if withdrawn within 15 days of batch start. 50% refund within 16-30 days. Zero refund after 30 days of batch commencement.",
+      "keywords": [
+        "refund",
+        "cancellation",
+        "money back",
+        "policy",
+        "withdrawal"
+      ]
+    },
+    {
+      "id": "chunk-apex-4",
+      "documentId": "doc-apex-brochure",
+      "instituteId": "inst-apex-001",
+      "chunkIndex": 3,
+      "content": "Counseling & Trial Classes: Free 3-day demo class pass available. 1-on-1 counseling with senior faculty available Monday to Saturday 10 AM to 6 PM. Daily 2-hour doubt clearance counters.",
+      "keywords": [
+        "demo",
+        "trial class",
+        "counseling",
+        "appointment",
+        "faculty",
+        "doubts"
+      ]
+    },
+    {
+      "id": "chunk-doc-1794117236182-0",
+      "documentId": "doc-1794117236182",
+      "instituteId": "inst-codecraft-002",
+      "chunkIndex": 0,
+      "content": "CODECRAFT AI ACADEMY 2026 OFFICIAL CURRICULUM & ADMISSION GUIDELINES 1. Course: Full Stack AI Software Engineering Bootcamp (Duration: 24 weeks). 2. Base Tuition Fee: ₹85,000 payable in 3 easy installments. First installment is ₹20,000 at enrollment. 3. 100% Placement Guarantee: Students with >85% score in mock assessments get guaranteed interviews at top startups. 4. Timings: Evening Batch starts at 7:00 PM to 9:30 PM (Mon-Fri) designed for working professionals and college students. 5. Refund: 100% refund during the first 7 days trial period without questions asked.",
+      "embedding": [
+        0.15337495471844778,
+        0.23006243207767166,
+        0.15337495471844778,
+        0.15337495471844778,
+        0.030674990943689556,
+        0.030674990943689556,
+        0,
+        0,
+        0,
+        0.015337495471844778,
+        0,
+        0.015337495471844778,
+        0.07668747735922389,
+        0.09202497283106867,
+        0.12269996377475823,
+        0.138037459246603,
+        0.3374249003805851,
+        0.18404994566213734,
+        0.16871245019029255,
+        0.10736246830291345,
+        0.06134998188737911,
+        0.07668747735922389,
+        0.15337495471844778,
+        0.15337495471844778,
+        0.046012486415534334,
+        0.15337495471844778,
+        0.16871245019029255,
+        0.138037459246603,
+        0.138037459246603,
+        0.030674990943689556,
+        0.07668747735922389,
+        0.07668747735922389,
+        0.015337495471844778,
+        0.06134998188737911,
+        0.015337495471844778,
+        0.015337495471844778,
+        0,
+        0.015337495471844778,
+        0,
+        0,
+        0,
+        0.09202497283106867,
+        0.015337495471844778,
+        0,
+        0.138037459246603,
+        0.18404994566213734,
+        0.06134998188737911,
+        0.138037459246603,
+        0.09202497283106867,
+        0.10736246830291345,
+        0.2147249366058269,
+        0.12269996377475823,
+        0.06134998188737911,
+        0.07668747735922389,
+        0.046012486415534334,
+        0.10736246830291345,
+        0.18404994566213734,
+        0.2147249366058269,
+        0.138037459246603,
+        0.138037459246603,
+        0.16871245019029255,
+        0.1993874411339821,
+        0.16871245019029255,
+        0.2607374230213612
+      ],
+      "keywords": [
+        "codecraft",
+        "academy",
+        "2026",
+        "official",
+        "curriculum",
+        "admission",
+        "guidelines",
+        "course"
+      ]
+    }
+  ],
+  "leads": [
+    {
+      "id": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "assignedCounsellorId": "user-counsellor-01",
+      "studentName": "Ananya Deshmukh",
+      "phone": "+91-9111223344",
+      "courseId": "course-jee-target",
+      "status": "COUNSELLING_SCHEDULED",
+      "source": "WEBSITE_CHAT",
+      "leadScore": 80,
+      "nextBestAction": "Send counselor profile, Google Meet link or campus Google Map location.",
+      "notes": "Lead captured by AdmitFlow AI Assistant.",
+      "lastInteractionAt": "2026-11-08T05:54:22.230Z",
+      "nextFollowupAt": "2026-11-09T05:54:22.232Z",
+      "createdAt": "2026-11-08T05:54:22.232Z",
+      "updatedAt": "2026-11-08T05:54:59.792Z"
+    },
+    {
+      "id": "lead-1794117236202",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "assignedCounsellorId": "user-counsellor-01",
+      "studentName": "Siddharth Saxena",
+      "phone": "+91-9876500011",
+      "courseId": "course-jee-target",
+      "status": "COUNSELLING_SCHEDULED",
+      "source": "WEBSITE_CHAT",
+      "leadScore": 95,
+      "nextBestAction": "Send counselor profile, Google Meet link or campus Google Map location.",
+      "notes": "Lead captured by AdmitFlow AI Assistant.",
+      "lastInteractionAt": "2026-11-08T05:53:56.202Z",
+      "nextFollowupAt": "2026-11-14T10:00:00Z",
+      "createdAt": "2026-11-08T05:53:56.202Z",
+      "updatedAt": "2026-11-08T05:53:56.224Z"
+    },
+    {
+      "id": "lead-1794116857593",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "assignedCounsellorId": "user-counsellor-01",
+      "studentName": "Harshita Meena",
+      "phone": "+91-9998887766",
+      "courseId": "course-jee-target",
+      "status": "COUNSELLING_SCHEDULED",
+      "source": "WEBSITE_CHAT",
+      "leadScore": 80,
+      "nextBestAction": "Send appointment confirmation SMS and WhatsApp directions.",
+      "notes": "Testing Workflow B enquiry submission",
+      "lastInteractionAt": "2026-11-08T05:47:37.593Z",
+      "nextFollowupAt": "2026-11-09T05:47:37.607Z",
+      "createdAt": "2026-11-08T05:47:37.593Z",
+      "updatedAt": "2026-11-08T05:47:37.608Z"
+    },
+    {
+      "id": "lead-01",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "assignedCounsellorId": "user-counsellor-01",
+      "studentName": "Aarav Choudhary",
+      "phone": "+91-9876543210",
+      "email": "aarav.c@gmail.com",
+      "courseId": "course-jee-target",
+      "status": "INTERESTED",
+      "source": "WEBSITE_CHAT",
+      "leadScore": 100,
+      "nextBestAction": "Offer 3-day classroom demo pass and confirm hostel requirements.",
+      "notes": "Asked detailed questions about Kota hostel safety and 2nd installment due date. Highly interested.",
+      "lastInteractionAt": "2026-11-07T14:30:00Z",
+      "nextFollowupAt": "2026-11-09T11:00:00Z",
+      "createdAt": "2026-11-05T10:00:00Z",
+      "updatedAt": "2026-11-08T05:53:56.200Z"
+    },
+    {
+      "id": "lead-02",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-jaipur",
+      "assignedCounsellorId": "user-counsellor-02",
+      "studentName": "Sneha Sharma",
+      "phone": "+91-9823456781",
+      "email": "sneha.neet@gmail.com",
+      "courseId": "course-neet-achiever",
+      "status": "COUNSELLING_SCHEDULED",
+      "source": "WHATSAPP",
+      "leadScore": 92,
+      "nextBestAction": "Prepare NEET score analysis sheet before scheduled appointment.",
+      "notes": "Scored 540 in NEET 2026, aims for 680+ in 2027. Wants Super 40 batch.",
+      "lastInteractionAt": "2026-11-07T18:00:00Z",
+      "nextFollowupAt": "2026-11-08T15:00:00Z",
+      "createdAt": "2026-11-04T12:00:00Z",
+      "updatedAt": "2026-11-07T18:00:00Z"
+    },
+    {
+      "id": "lead-03",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "assignedCounsellorId": "user-counsellor-01",
+      "studentName": "Rohan Rathore",
+      "phone": "+91-9711223344",
+      "courseId": "course-jee-target",
+      "status": "NEW",
+      "source": "WEBSITE_CHAT",
+      "leadScore": 65,
+      "nextBestAction": "Send course syllabus brochure and scholarship test dates.",
+      "notes": "New enquiry from website chatbot at 10 PM. Inquired about batch start dates.",
+      "lastInteractionAt": "2026-11-08T02:15:00Z",
+      "nextFollowupAt": "2026-11-08T12:00:00Z",
+      "createdAt": "2026-11-08T02:15:00Z",
+      "updatedAt": "2026-11-08T02:15:00Z"
+    },
+    {
+      "id": "lead-04",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-jaipur",
+      "assignedCounsellorId": "user-counsellor-02",
+      "studentName": "Kunal Singhal",
+      "phone": "+91-9988776655",
+      "courseId": "course-neet-achiever",
+      "status": "ADMISSION_CONFIRMED",
+      "source": "DIRECT_WALKIN",
+      "leadScore": 100,
+      "nextBestAction": "Issue ID card and study material welcome kit.",
+      "notes": "Paid first installment of ₹45,000 via UPI. Enrolled in Jaipur batch.",
+      "lastInteractionAt": "2026-11-06T16:00:00Z",
+      "createdAt": "2026-11-02T11:00:00Z",
+      "updatedAt": "2026-11-06T16:00:00Z"
+    },
+    {
+      "id": "lead-05",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-delhi",
+      "studentName": "Megha Gupta",
+      "phone": "+91-9123456789",
+      "courseId": "course-foundation-9-10",
+      "status": "LOST",
+      "source": "GOOGLE_ADS",
+      "leadScore": 25,
+      "dropOffReason": "Opted for school-integrated local program due to travel distance.",
+      "notes": "Parent found South Extension center too far from residence in Noida.",
+      "lastInteractionAt": "2026-11-03T17:00:00Z",
+      "createdAt": "2026-10-28T09:00:00Z",
+      "updatedAt": "2026-11-03T17:00:00Z"
+    }
+  ],
+  "lead_activities": [
+    {
+      "id": "act-1794117262271",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "COUNSELLING_SCHEDULED",
+      "description": "1-on-1 counseling booked for 18/11/2026, 7:30:00 pm",
+      "createdAt": "2026-11-08T05:54:22.289Z"
+    },
+    {
+      "id": "act-1794117262266",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "DUPLICATE_RE_ENQUIRY",
+      "description": "Student re-enquired via WHATSAPP.",
+      "createdAt": "2026-11-08T05:54:22.266Z"
+    },
+    {
+      "id": "act-note-1794117262265",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "COUNSELLOR",
+      "activityType": "COUNSELLOR_NOTE",
+      "description": "Parent requested batch change to morning 8 AM slot.",
+      "createdAt": "2026-11-08T05:54:22.265Z"
+    },
+    {
+      "id": "act-1794117262261",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "LEAD_STATUS_UPDATE",
+      "description": "Lead status changed to ADMISSION_CONFIRMED",
+      "createdAt": "2026-11-08T05:54:22.261Z"
+    },
+    {
+      "id": "act-1794117262256",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "LEAD_STATUS_UPDATE",
+      "description": "Lead status changed to TRIAL_CLASS",
+      "createdAt": "2026-11-08T05:54:22.256Z"
+    },
+    {
+      "id": "act-1794117262252",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "LEAD_STATUS_UPDATE",
+      "description": "Lead status changed to COUNSELLING_SCHEDULED",
+      "createdAt": "2026-11-08T05:54:22.252Z"
+    },
+    {
+      "id": "act-1794117262247",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "LEAD_STATUS_UPDATE",
+      "description": "Lead status changed to INTERESTED",
+      "createdAt": "2026-11-08T05:54:22.247Z"
+    },
+    {
+      "id": "act-1794117262239",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "LEAD_STATUS_UPDATE",
+      "description": "Lead status changed to CONTACTED",
+      "createdAt": "2026-11-08T05:54:22.239Z"
+    },
+    {
+      "id": "act-1794117262232",
+      "leadId": "lead-1794117262229",
+      "instituteId": "inst-apex-001",
+      "actorType": "SYSTEM",
+      "activityType": "LEAD_CREATED",
+      "description": "New lead created from WEBSITE_CHAT.",
+      "createdAt": "2026-11-08T05:54:22.232Z"
+    },
+    {
+      "id": "act-1794117236209",
+      "leadId": "lead-1794117236202",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "COUNSELLING_SCHEDULED",
+      "description": "1-on-1 counseling booked for 15/11/2026, 3:30:00 pm",
+      "createdAt": "2026-11-08T05:53:56.219Z"
+    },
+    {
+      "id": "act-1794117236205",
+      "leadId": "lead-1794117236202",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "LEAD_STATUS_UPDATE",
+      "description": "Lead status changed to INTERESTED",
+      "createdAt": "2026-11-08T05:53:56.205Z"
+    },
+    {
+      "id": "act-1794117236202",
+      "leadId": "lead-1794117236202",
+      "instituteId": "inst-apex-001",
+      "actorType": "SYSTEM",
+      "activityType": "LEAD_CREATED",
+      "description": "New lead created from WEBSITE_CHAT.",
+      "createdAt": "2026-11-08T05:53:56.202Z"
+    },
+    {
+      "id": "act-1794116857597",
+      "leadId": "lead-1794116857593",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "COUNSELLING_SCHEDULED",
+      "description": "1-on-1 counseling booked for 12/11/2026, 4:30:00 pm",
+      "createdAt": "2026-11-08T05:47:37.606Z"
+    },
+    {
+      "id": "act-1794116857595",
+      "leadId": "lead-1794116857593",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "DUPLICATE_RE_ENQUIRY",
+      "description": "Student re-enquired via WHATSAPP.",
+      "createdAt": "2026-11-08T05:47:37.595Z"
+    },
+    {
+      "id": "act-1794116857593",
+      "leadId": "lead-1794116857593",
+      "instituteId": "inst-apex-001",
+      "actorType": "SYSTEM",
+      "activityType": "LEAD_CREATED",
+      "description": "New lead created from WEBSITE_CHAT.",
+      "createdAt": "2026-11-08T05:47:37.593Z"
+    },
+    {
+      "id": "act-01",
+      "leadId": "lead-01",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "CHAT_ENQUIRY",
+      "description": "AI Answered JEE Target 2027 fee enquiry in Hinglish and explained installment structure.",
+      "createdAt": "2026-11-05T10:02:00Z"
+    },
+    {
+      "id": "act-02",
+      "leadId": "lead-01",
+      "instituteId": "inst-apex-001",
+      "actorType": "COUNSELLOR",
+      "actorId": "user-counsellor-01",
+      "activityType": "COUNSELLOR_CALL",
+      "description": "Priya Joshi connected with student Aarav. Discussed Kota hostel options.",
+      "createdAt": "2026-11-06T11:30:00Z"
+    },
+    {
+      "id": "act-03",
+      "leadId": "lead-02",
+      "instituteId": "inst-apex-001",
+      "actorType": "AI_AGENT",
+      "activityType": "COUNSELLING_BOOKED",
+      "description": "AI Agent booked a 1-on-1 counseling appointment for 8th Nov at 3:00 PM.",
+      "createdAt": "2026-11-07T18:00:00Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt-1794117262269",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "leadId": "lead-1794117262229",
+      "counsellorId": "user-counsellor-01",
+      "scheduledAt": "2026-11-18T14:00:00Z",
+      "durationMinutes": 45,
+      "mode": "ONLINE_MEET",
+      "status": "SCHEDULED",
+      "meetingLink": "https://meet.google.com/adm-flow-demo",
+      "notes": "Counselling booked for Ananya Deshmukh",
+      "createdAt": "2026-11-08T05:54:22.269Z"
+    },
+    {
+      "id": "apt-1794117236208",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "leadId": "lead-1794117236202",
+      "counsellorId": "user-counsellor-01",
+      "scheduledAt": "2026-11-15T10:00:00Z",
+      "durationMinutes": 45,
+      "mode": "ONLINE_MEET",
+      "status": "SCHEDULED",
+      "meetingLink": "https://meet.google.com/adm-flow-demo",
+      "notes": "Counselling booked for Siddharth Saxena",
+      "createdAt": "2026-11-08T05:53:56.208Z"
+    },
+    {
+      "id": "apt-1794116857596",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-kota",
+      "leadId": "lead-1794116857593",
+      "counsellorId": "user-counsellor-01",
+      "scheduledAt": "2026-11-12T11:00:00Z",
+      "durationMinutes": 45,
+      "mode": "ONLINE_MEET",
+      "status": "SCHEDULED",
+      "meetingLink": "https://meet.google.com/adm-flow-demo",
+      "notes": "Counselling booked for Harshita Meena",
+      "createdAt": "2026-11-08T05:47:37.596Z"
+    },
+    {
+      "id": "apt-01",
+      "instituteId": "inst-apex-001",
+      "branchId": "branch-apex-jaipur",
+      "leadId": "lead-02",
+      "counsellorId": "user-counsellor-02",
+      "scheduledAt": "2026-11-08T15:00:00Z",
+      "durationMinutes": 45,
+      "mode": "OFFLINE_CAMPUS",
+      "status": "SCHEDULED",
+      "notes": "NEET Achiever 2027 Strategy & Scholarship Evaluation with Amit Verma.",
+      "createdAt": "2026-11-07T18:00:00Z"
+    }
+  ],
+  "followups": [
+    {
+      "id": "fol-overdue-test",
+      "instituteId": "inst-apex-001",
+      "leadId": "lead-1794117262229",
+      "counsellorId": "user-counsellor-01",
+      "dueDate": "2026-11-07T05:54:22.294Z",
+      "suggestedMessage": "Namaste Ananya! Your counseling session is pending confirmation.",
+      "channel": "WHATSAPP",
+      "status": "SENT",
+      "isOverdue": true,
+      "createdAt": "2026-11-08T05:54:22.294Z",
+      "approvedBy": "user-counsellor-01"
+    },
+    {
+      "id": "fol-1794117236220",
+      "instituteId": "inst-apex-001",
+      "leadId": "lead-1794117236202",
+      "counsellorId": "user-counsellor-01",
+      "dueDate": "2026-11-14T10:00:00Z",
+      "suggestedMessage": "Namaste Siddharth! Following up on your JEE counseling slot.",
+      "channel": "WHATSAPP",
+      "status": "PENDING",
+      "isOverdue": false,
+      "createdAt": "2026-11-08T05:53:56.220Z"
+    },
+    {
+      "id": "fol-1794116857607",
+      "instituteId": "inst-apex-001",
+      "leadId": "lead-1794116857593",
+      "counsellorId": "user-counsellor-01",
+      "dueDate": "2026-11-09T05:47:37.607Z",
+      "suggestedMessage": "Namaste! Are you ready to attend your free demo session this Thursday?",
+      "channel": "WHATSAPP",
+      "status": "PENDING",
+      "isOverdue": false,
+      "createdAt": "2026-11-08T05:47:37.607Z"
+    },
+    {
+      "id": "fol-01",
+      "instituteId": "inst-apex-001",
+      "leadId": "lead-01",
+      "counsellorId": "user-counsellor-01",
+      "dueDate": "2026-11-09T11:00:00Z",
+      "suggestedMessage": "Namaste Aarav! We have reserved your provisional seat in JEE Target Batch A1. Would you like to confirm your 3-day demo pass for this Thursday?",
+      "channel": "WHATSAPP",
+      "status": "PENDING",
+      "isOverdue": false,
+      "createdAt": "2026-11-07T14:35:00Z"
+    },
+    {
+      "id": "fol-02",
+      "instituteId": "inst-apex-001",
+      "leadId": "lead-03",
+      "counsellorId": "user-counsellor-01",
+      "dueDate": "2026-11-08T10:00:00Z",
+      "suggestedMessage": "Hello Rohan! Following up on your query regarding JEE batch start dates. Our early morning batch starts Nov 20th with limited 50 seats. Would you like a call back?",
+      "channel": "WHATSAPP",
+      "status": "PENDING",
+      "isOverdue": true,
+      "createdAt": "2026-11-08T02:20:00Z"
+    }
+  ],
+  "agent_executions": [
+    {
+      "id": "exec-1794117299793-902",
+      "instituteId": "inst-apex-001",
+      "skillName": "recommend_next_action",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117262229"
+      },
+      "outputPayload": {
+        "recommendedAction": "Send counselor profile, Google Meet link or campus Google Map location."
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 1,
+      "createdAt": "2026-11-08T05:54:59.793Z"
+    },
+    {
+      "id": "exec-1794117299791-928",
+      "instituteId": "inst-apex-001",
+      "skillName": "identify_dropoffs",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {},
+      "outputPayload": {
+        "stalledCount": 0,
+        "dropoffs": []
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 1,
+      "createdAt": "2026-11-08T05:54:59.791Z"
+    },
+    {
+      "id": "exec-1794117262292-709",
+      "instituteId": "inst-apex-001",
+      "skillName": "schedule_counselling",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-01",
+        "scheduledAt": "2026-11-18T14:00:00Z",
+        "counsellorId": "user-counsellor-01",
+        "mode": "OFFLINE_CAMPUS"
+      },
+      "outputPayload": null,
+      "status": "FAILED",
+      "executionTimeMs": 0,
+      "errorMessage": "This counsellor slot is already booked. Please choose another time.",
+      "createdAt": "2026-11-08T05:54:22.292Z"
+    },
+    {
+      "id": "exec-1794117262290-144",
+      "instituteId": "inst-apex-001",
+      "skillName": "schedule_counselling",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117262229",
+        "scheduledAt": "2026-11-18T14:00:00Z",
+        "counsellorId": "user-counsellor-01",
+        "mode": "ONLINE_MEET"
+      },
+      "outputPayload": {
+        "id": "apt-1794117262269",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "leadId": "lead-1794117262229",
+        "counsellorId": "user-counsellor-01",
+        "scheduledAt": "2026-11-18T14:00:00Z",
+        "durationMinutes": 45,
+        "mode": "ONLINE_MEET",
+        "status": "SCHEDULED",
+        "meetingLink": "https://meet.google.com/adm-flow-demo",
+        "notes": "Counselling booked for Ananya Deshmukh",
+        "createdAt": "2026-11-08T05:54:22.269Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 21,
+      "createdAt": "2026-11-08T05:54:22.290Z"
+    },
+    {
+      "id": "exec-1794117262268-237",
+      "instituteId": "inst-apex-001",
+      "skillName": "create_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "studentName": "Ananya D (Re-enquiry)",
+        "phone": "+91-9111223344",
+        "source": "WHATSAPP"
+      },
+      "outputPayload": {
+        "leadId": "lead-1794117262229",
+        "isDuplicate": true
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 1,
+      "createdAt": "2026-11-08T05:54:22.268Z"
+    },
+    {
+      "id": "exec-1794117262264-236",
+      "instituteId": "inst-apex-001",
+      "skillName": "update_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117262229",
+        "updates": {
+          "status": "ADMISSION_CONFIRMED"
+        }
+      },
+      "outputPayload": {
+        "id": "lead-1794117262229",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Ananya Deshmukh",
+        "phone": "+91-9111223344",
+        "courseId": "course-jee-target",
+        "status": "ADMISSION_CONFIRMED",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:54:22.230Z",
+        "nextFollowupAt": "2026-11-09T05:54:22.232Z",
+        "createdAt": "2026-11-08T05:54:22.232Z",
+        "updatedAt": "2026-11-08T05:54:22.259Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 5,
+      "createdAt": "2026-11-08T05:54:22.264Z"
+    },
+    {
+      "id": "exec-1794117262258-674",
+      "instituteId": "inst-apex-001",
+      "skillName": "update_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117262229",
+        "updates": {
+          "status": "TRIAL_CLASS"
+        }
+      },
+      "outputPayload": {
+        "id": "lead-1794117262229",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Ananya Deshmukh",
+        "phone": "+91-9111223344",
+        "courseId": "course-jee-target",
+        "status": "TRIAL_CLASS",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:54:22.230Z",
+        "nextFollowupAt": "2026-11-09T05:54:22.232Z",
+        "createdAt": "2026-11-08T05:54:22.232Z",
+        "updatedAt": "2026-11-08T05:54:22.255Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2,
+      "createdAt": "2026-11-08T05:54:22.258Z"
+    },
+    {
+      "id": "exec-1794117262253-134",
+      "instituteId": "inst-apex-001",
+      "skillName": "update_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117262229",
+        "updates": {
+          "status": "COUNSELLING_SCHEDULED"
+        }
+      },
+      "outputPayload": {
+        "id": "lead-1794117262229",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Ananya Deshmukh",
+        "phone": "+91-9111223344",
+        "courseId": "course-jee-target",
+        "status": "COUNSELLING_SCHEDULED",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:54:22.230Z",
+        "nextFollowupAt": "2026-11-09T05:54:22.232Z",
+        "createdAt": "2026-11-08T05:54:22.232Z",
+        "updatedAt": "2026-11-08T05:54:22.250Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3,
+      "createdAt": "2026-11-08T05:54:22.253Z"
+    },
+    {
+      "id": "exec-1794117262248-350",
+      "instituteId": "inst-apex-001",
+      "skillName": "update_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117262229",
+        "updates": {
+          "status": "INTERESTED"
+        }
+      },
+      "outputPayload": {
+        "id": "lead-1794117262229",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Ananya Deshmukh",
+        "phone": "+91-9111223344",
+        "courseId": "course-jee-target",
+        "status": "INTERESTED",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:54:22.230Z",
+        "nextFollowupAt": "2026-11-09T05:54:22.232Z",
+        "createdAt": "2026-11-08T05:54:22.232Z",
+        "updatedAt": "2026-11-08T05:54:22.245Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3,
+      "createdAt": "2026-11-08T05:54:22.248Z"
+    },
+    {
+      "id": "exec-1794117262242-476",
+      "instituteId": "inst-apex-001",
+      "skillName": "update_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117262229",
+        "updates": {
+          "status": "CONTACTED"
+        }
+      },
+      "outputPayload": {
+        "id": "lead-1794117262229",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Ananya Deshmukh",
+        "phone": "+91-9111223344",
+        "courseId": "course-jee-target",
+        "status": "CONTACTED",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:54:22.230Z",
+        "nextFollowupAt": "2026-11-09T05:54:22.232Z",
+        "createdAt": "2026-11-08T05:54:22.232Z",
+        "updatedAt": "2026-11-08T05:54:22.238Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 4,
+      "createdAt": "2026-11-08T05:54:22.242Z"
+    },
+    {
+      "id": "exec-1794117262236-741",
+      "instituteId": "inst-apex-001",
+      "skillName": "create_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "studentName": "Ananya Deshmukh",
+        "phone": "+91-9111223344",
+        "courseNameOrId": "Target JEE (Main + Advanced) 2027",
+        "source": "WEBSITE_CHAT"
+      },
+      "outputPayload": {
+        "id": "lead-1794117262229",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Ananya Deshmukh",
+        "phone": "+91-9111223344",
+        "courseId": "course-jee-target",
+        "status": "NEW",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:54:22.230Z",
+        "nextFollowupAt": "2026-11-09T05:54:22.232Z",
+        "createdAt": "2026-11-08T05:54:22.232Z",
+        "updatedAt": "2026-11-08T05:54:22.232Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 7,
+      "createdAt": "2026-11-08T05:54:22.236Z"
+    },
+    {
+      "id": "exec-1794117236224-866",
+      "instituteId": "inst-apex-001",
+      "skillName": "recommend_next_action",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117236202"
+      },
+      "outputPayload": {
+        "recommendedAction": "Send counselor profile, Google Meet link or campus Google Map location."
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:53:56.224Z"
+    },
+    {
+      "id": "exec-1794117236223-960",
+      "instituteId": "inst-apex-001",
+      "skillName": "identify_dropoffs",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {},
+      "outputPayload": {
+        "stalledCount": 0,
+        "dropoffs": []
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:53:56.223Z"
+    },
+    {
+      "id": "exec-1794117236222-71",
+      "instituteId": "inst-apex-001",
+      "skillName": "generate_lead_report",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {},
+      "outputPayload": {
+        "totalLeads": 7,
+        "stageBreakdown": {
+          "COUNSELLING_SCHEDULED": 3,
+          "INTERESTED": 1,
+          "NEW": 1,
+          "ADMISSION_CONFIRMED": 1,
+          "LOST": 1
+        },
+        "admissionsConfirmed": 1,
+        "conversionRatePct": "14.3",
+        "hotLeadsCount": 4,
+        "generatedAt": "2026-11-08T05:53:56.222Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:53:56.222Z"
+    },
+    {
+      "id": "exec-1794117236222-112",
+      "instituteId": "inst-apex-001",
+      "skillName": "create_followup",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117236202",
+        "dueDate": "2026-11-14T10:00:00Z",
+        "suggestedMessage": "Namaste Siddharth! Following up on your JEE counseling slot.",
+        "channel": "WHATSAPP"
+      },
+      "outputPayload": {
+        "id": "fol-1794117236220",
+        "instituteId": "inst-apex-001",
+        "leadId": "lead-1794117236202",
+        "counsellorId": "user-counsellor-01",
+        "dueDate": "2026-11-14T10:00:00Z",
+        "suggestedMessage": "Namaste Siddharth! Following up on your JEE counseling slot.",
+        "channel": "WHATSAPP",
+        "status": "PENDING",
+        "isOverdue": false,
+        "createdAt": "2026-11-08T05:53:56.220Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2,
+      "createdAt": "2026-11-08T05:53:56.222Z"
+    },
+    {
+      "id": "exec-1794117236220-20",
+      "instituteId": "inst-apex-001",
+      "skillName": "schedule_counselling",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117236202",
+        "scheduledAt": "2026-11-15T10:00:00Z",
+        "counsellorId": "user-counsellor-01",
+        "mode": "ONLINE_MEET"
+      },
+      "outputPayload": {
+        "id": "apt-1794117236208",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "leadId": "lead-1794117236202",
+        "counsellorId": "user-counsellor-01",
+        "scheduledAt": "2026-11-15T10:00:00Z",
+        "durationMinutes": 45,
+        "mode": "ONLINE_MEET",
+        "status": "SCHEDULED",
+        "meetingLink": "https://meet.google.com/adm-flow-demo",
+        "notes": "Counselling booked for Siddharth Saxena",
+        "createdAt": "2026-11-08T05:53:56.208Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 12,
+      "createdAt": "2026-11-08T05:53:56.220Z"
+    },
+    {
+      "id": "exec-1794117236208-587",
+      "instituteId": "inst-apex-001",
+      "skillName": "check_batch_availability",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "courseId": "course-jee-target"
+      },
+      "outputPayload": [
+        {
+          "batchId": "batch-jee-k1",
+          "name": "JEE Target Batch A1 (Morning)",
+          "startDate": "2026-11-20",
+          "timings": "08:00 AM - 01:30 PM",
+          "seatsLeft": 8,
+          "status": "OPEN"
+        },
+        {
+          "batchId": "batch-jee-j1",
+          "name": "JEE Target Jaipur Batch J1",
+          "startDate": "2026-11-25",
+          "timings": "09:00 AM - 02:30 PM",
+          "seatsLeft": 17,
+          "status": "OPEN"
+        }
+      ],
+      "status": "SUCCESS",
+      "executionTimeMs": 1,
+      "createdAt": "2026-11-08T05:53:56.208Z"
+    },
+    {
+      "id": "exec-1794117236207-489",
+      "instituteId": "inst-apex-001",
+      "skillName": "retrieve_fee_details",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "courseId": "course-jee-target",
+        "scholarshipPercent": 10
+      },
+      "outputPayload": {
+        "courseName": "Target JEE (Main + Advanced) 2027",
+        "baseFee": 145000,
+        "scholarshipPercent": 10,
+        "discountApplied": 14500,
+        "netPayable": 130500,
+        "installments": [
+          {
+            "installmentNumber": 1,
+            "due": "At Admission",
+            "amount": 40000
+          },
+          {
+            "installmentNumber": 2,
+            "due": "60 Days after start",
+            "amount": 43500
+          },
+          {
+            "installmentNumber": 3,
+            "due": "120 Days after start",
+            "amount": 47000
+          }
+        ],
+        "refundPolicy": "100% refund within 15 days of batch start (₹2,000 admin charge). 50% between 16-30 days."
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:53:56.207Z"
+    },
+    {
+      "id": "exec-1794117236206-575",
+      "instituteId": "inst-apex-001",
+      "skillName": "retrieve_course_details",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "courseNameOrId": "Target JEE"
+      },
+      "outputPayload": {
+        "course": {
+          "id": "course-jee-target",
+          "instituteId": "inst-apex-001",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "code": "JEE-T27",
+          "category": "Engineering Test Prep",
+          "durationWeeks": 48,
+          "baseFee": 145000,
+          "minInstallmentFee": 40000,
+          "maxDiscountPct": 15,
+          "description": "Comprehensive 1-year classroom program covering complete Class 11 and 12 Physics, Chemistry, and Mathematics for JEE Advanced.",
+          "eligibility": "Class 12 studying or passed with minimum 75% in PCM",
+          "isActive": true,
+          "createdAt": "2026-01-11T10:00:00Z"
+        },
+        "availableBatches": [
+          {
+            "id": "batch-jee-k1",
+            "courseId": "course-jee-target",
+            "instituteId": "inst-apex-001",
+            "branchId": "branch-apex-kota",
+            "batchName": "JEE Target Batch A1 (Morning)",
+            "startDate": "2026-11-20",
+            "timings": "08:00 AM - 01:30 PM",
+            "daysOfWeek": "Monday to Saturday",
+            "maxSeats": 50,
+            "enrolledCount": 42,
+            "status": "ENROLLING"
+          },
+          {
+            "id": "batch-jee-j1",
+            "courseId": "course-jee-target",
+            "instituteId": "inst-apex-001",
+            "branchId": "branch-apex-jaipur",
+            "batchName": "JEE Target Jaipur Batch J1",
+            "startDate": "2026-11-25",
+            "timings": "09:00 AM - 02:30 PM",
+            "daysOfWeek": "Monday to Saturday",
+            "maxSeats": 45,
+            "enrolledCount": 28,
+            "status": "ENROLLING"
+          }
+        ]
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:53:56.206Z"
+    },
+    {
+      "id": "exec-1794117236206-742",
+      "instituteId": "inst-apex-001",
+      "skillName": "update_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794117236202",
+        "updates": {
+          "status": "INTERESTED",
+          "leadScore": 75
+        }
+      },
+      "outputPayload": {
+        "id": "lead-1794117236202",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Siddharth Saxena",
+        "phone": "+91-9876500011",
+        "courseId": "course-jee-target",
+        "status": "INTERESTED",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 75,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:53:56.202Z",
+        "nextFollowupAt": "2026-11-09T05:53:56.202Z",
+        "createdAt": "2026-11-08T05:53:56.202Z",
+        "updatedAt": "2026-11-08T05:53:56.205Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 1,
+      "createdAt": "2026-11-08T05:53:56.206Z"
+    },
+    {
+      "id": "exec-1794117236204-526",
+      "instituteId": "inst-apex-001",
+      "skillName": "create_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "studentName": "Siddharth Saxena",
+        "phone": "+91-9876500011",
+        "courseNameOrId": "Target JEE (Main + Advanced) 2027",
+        "source": "WEBSITE_CHAT"
+      },
+      "outputPayload": {
+        "id": "lead-1794117236202",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Siddharth Saxena",
+        "phone": "+91-9876500011",
+        "courseId": "course-jee-target",
+        "status": "NEW",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Lead captured by AdmitFlow AI Assistant.",
+        "lastInteractionAt": "2026-11-08T05:53:56.202Z",
+        "nextFollowupAt": "2026-11-09T05:53:56.202Z",
+        "createdAt": "2026-11-08T05:53:56.202Z",
+        "updatedAt": "2026-11-08T05:53:56.202Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2,
+      "createdAt": "2026-11-08T05:53:56.204Z"
+    },
+    {
+      "id": "exec-1794117236200-363",
+      "instituteId": "inst-apex-001",
+      "skillName": "qualify_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-01",
+        "context": "Student wants immediate admission and hostel confirmation"
+      },
+      "outputPayload": {
+        "leadScore": 100
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:53:56.200Z"
+    },
+    {
+      "id": "exec-1794117236199-157",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Hostel aur mess facility Kota campus mein hai kya?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Apex Academy Admission & Scholarship: Direct admission based on marks or ATSE exam. Up to 90% scholarship available. Hostel & Mess available in Kota at ₹12,000/month with single/twin rooms and security. Agar aapko admission process ya counseling slot book karna hai toh kripya apna phone number share karein!",
+        "isGrounded": true,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.5,
+            "text": "Apex Academy Admission & Scholarship: Direct admission based on marks or ATSE exam. Up to 90% scholarship available. Hostel & Mess available in Kota at ₹12,000/month with single/twin rooms and security."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:53:56.199Z"
+    },
+    {
+      "id": "exec-1794117236198-130",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Apex mein Target JEE 2027 batch ki fees kitni hai?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Apex Academy (IIT-JEE & NEET) mein Target JEE (Main + Advanced) 2027 ki total base fee ₹1,45,000 hai. Isko aap 3 installments mein pay kar sakte hain (minimum first installment ₹40,000). One-time payment par 5% discount bhi available hai. Kya aap batch timings ya demo class ke baare mein jaanna chahenge?",
+        "isGrounded": true,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.5333333333333333,
+            "text": "Fee Payment & Installments: 3 equal installments. 5% early bird discount on one-time payment. Target JEE 2027 base fee is ₹1,45,000. NEET Achiever dropper batch base fee is ₹1,25,000."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.16666666666666666,
+            "text": "Apex Academy Admission & Scholarship: Direct admission based on marks or ATSE exam. Up to 90% scholarship available. Hostel & Mess available in Kota at ₹12,000/month with single/twin rooms and security."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.13333333333333333,
+            "text": "Refund Policy: 100% refund (minus ₹2,000 admin fee) if withdrawn within 15 days of batch start. 50% refund within 16-30 days. Zero refund after 30 days of batch commencement."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 13,
+      "createdAt": "2026-11-08T05:53:56.198Z"
+    },
+    {
+      "id": "exec-1794116857608-282",
+      "instituteId": "inst-apex-001",
+      "skillName": "create_followup",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794116857593",
+        "dueDate": "2026-11-09T05:47:37.607Z",
+        "suggestedMessage": "Namaste! Are you ready to attend your free demo session this Thursday?",
+        "channel": "WHATSAPP"
+      },
+      "outputPayload": {
+        "id": "fol-1794116857607",
+        "instituteId": "inst-apex-001",
+        "leadId": "lead-1794116857593",
+        "counsellorId": "user-counsellor-01",
+        "dueDate": "2026-11-09T05:47:37.607Z",
+        "suggestedMessage": "Namaste! Are you ready to attend your free demo session this Thursday?",
+        "channel": "WHATSAPP",
+        "status": "PENDING",
+        "isOverdue": false,
+        "createdAt": "2026-11-08T05:47:37.607Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 1,
+      "createdAt": "2026-11-08T05:47:37.608Z"
+    },
+    {
+      "id": "exec-1794116857607-142",
+      "instituteId": "inst-apex-001",
+      "skillName": "schedule_counselling",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794116857593",
+        "scheduledAt": "2026-11-12T11:00:00Z",
+        "counsellorId": "user-counsellor-01",
+        "mode": "OFFLINE_CAMPUS"
+      },
+      "outputPayload": null,
+      "status": "FAILED",
+      "executionTimeMs": 0,
+      "errorMessage": "This counsellor slot is already booked. Please choose another time.",
+      "createdAt": "2026-11-08T05:47:37.607Z"
+    },
+    {
+      "id": "exec-1794116857606-866",
+      "instituteId": "inst-apex-001",
+      "skillName": "schedule_counselling",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "leadId": "lead-1794116857593",
+        "scheduledAt": "2026-11-12T11:00:00Z",
+        "counsellorId": "user-counsellor-01",
+        "mode": "ONLINE_MEET"
+      },
+      "outputPayload": {
+        "id": "apt-1794116857596",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "leadId": "lead-1794116857593",
+        "counsellorId": "user-counsellor-01",
+        "scheduledAt": "2026-11-12T11:00:00Z",
+        "durationMinutes": 45,
+        "mode": "ONLINE_MEET",
+        "status": "SCHEDULED",
+        "meetingLink": "https://meet.google.com/adm-flow-demo",
+        "notes": "Counselling booked for Harshita Meena",
+        "createdAt": "2026-11-08T05:47:37.596Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 10,
+      "createdAt": "2026-11-08T05:47:37.606Z"
+    },
+    {
+      "id": "exec-1794116857595-641",
+      "instituteId": "inst-apex-001",
+      "skillName": "create_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "studentName": "Harshita M (Duplicate Test)",
+        "phone": "+91-9998887766",
+        "source": "WHATSAPP"
+      },
+      "outputPayload": {
+        "leadId": "lead-1794116857593",
+        "isDuplicate": true
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 0,
+      "createdAt": "2026-11-08T05:47:37.595Z"
+    },
+    {
+      "id": "exec-1794116857594-885",
+      "instituteId": "inst-apex-001",
+      "skillName": "create_lead",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "studentName": "Harshita Meena",
+        "phone": "+91-9998887766",
+        "courseNameOrId": "Target JEE (Main + Advanced) 2027",
+        "source": "WEBSITE_CHAT",
+        "notes": "Testing Workflow B enquiry submission"
+      },
+      "outputPayload": {
+        "id": "lead-1794116857593",
+        "instituteId": "inst-apex-001",
+        "branchId": "branch-apex-kota",
+        "assignedCounsellorId": "user-counsellor-01",
+        "studentName": "Harshita Meena",
+        "phone": "+91-9998887766",
+        "courseId": "course-jee-target",
+        "status": "NEW",
+        "source": "WEBSITE_CHAT",
+        "leadScore": 60,
+        "nextBestAction": "Send course syllabus brochure and schedule introductory counseling.",
+        "notes": "Testing Workflow B enquiry submission",
+        "lastInteractionAt": "2026-11-08T05:47:37.593Z",
+        "nextFollowupAt": "2026-11-09T05:47:37.593Z",
+        "createdAt": "2026-11-08T05:47:37.593Z",
+        "updatedAt": "2026-11-08T05:47:37.593Z"
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 1,
+      "createdAt": "2026-11-08T05:47:37.594Z"
+    },
+    {
+      "id": "exec-1794116857591-135",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "JEE Target batch ki base fees kitni hai aur installment options kya hain?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Apex Academy (IIT-JEE & NEET) mein Target JEE (Main + Advanced) 2027 ki total base fee ₹1,45,000 hai. Isko aap 3 installments mein pay kar sakte hain (minimum first installment ₹40,000). One-time payment par 5% discount bhi available hai. Kya aap batch timings ya demo class ke baare mein jaanna chahenge?",
+        "isGrounded": true,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.525,
+            "text": "Fee Payment & Installments: 3 equal installments. 5% early bird discount on one-time payment. Target JEE 2027 base fee is ₹1,45,000. NEET Achiever dropper batch base fee is ₹1,25,000."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.125,
+            "text": "Apex Academy Admission & Scholarship: Direct admission based on marks or ATSE exam. Up to 90% scholarship available. Hostel & Mess available in Kota at ₹12,000/month with single/twin rooms and security."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 48,
+      "createdAt": "2026-11-08T05:47:37.591Z"
+    },
+    {
+      "id": "exec-01",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "WEBSITE_CHAT",
+      "inputPayload": {
+        "query": "JEE Target batch ki fees kitni hai?"
+      },
+      "outputPayload": {
+        "baseFee": 145000,
+        "installments": 3,
+        "grounded": true
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 420,
+      "createdAt": "2026-11-07T14:30:00Z"
+    },
+    {
+      "id": "exec-02",
+      "instituteId": "inst-apex-001",
+      "skillName": "schedule_counselling",
+      "triggeredBy": "WHATSAPP_BOT",
+      "inputPayload": {
+        "leadId": "lead-02",
+        "slot": "2026-11-08T15:00:00Z"
+      },
+      "outputPayload": {
+        "appointmentId": "apt-01",
+        "confirmed": true
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 310,
+      "createdAt": "2026-11-07T18:00:00Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub-apex-01",
+      "instituteId": "inst-apex-001",
+      "tier": "PRO",
+      "status": "ACTIVE",
+      "leadsUsed": 1420,
+      "leadsQuota": 10000,
+      "ragQueriesUsed": 890,
+      "ragQueriesQuota": 5000,
+      "currentPeriodStart": "2026-11-01T00:00:00Z",
+      "currentPeriodEnd": "2026-12-01T00:00:00Z"
+    },
+    {
+      "id": "sub-codecraft-01",
+      "instituteId": "inst-codecraft-002",
+      "tier": "GROWTH",
+      "status": "ACTIVE",
+      "leadsUsed": 310,
+      "leadsQuota": 2500,
+      "ragQueriesUsed": 215,
+      "ragQueriesQuota": 1000,
+      "currentPeriodStart": "2026-11-01T00:00:00Z",
+      "currentPeriodEnd": "2026-12-01T00:00:00Z"
+    }
+  ]
+}
