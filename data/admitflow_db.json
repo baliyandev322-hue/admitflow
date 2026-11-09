@@ -106075,6 +106075,1287 @@
   ],
   "agent_executions": [
     {
+      "id": "exec-1794205039932-589",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Batch timing aur installment schedule dono detail me samjhao.",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy me aapka swagat hai. Main AdmitFlow AI hoon, aapka admission assistant. \n\nAapne batch timings aur installment schedule ke baare me pucha hai, toh main aapko saari details clear kar deta hoon:\n\n### 1. Installment Schedule & Fee Policy:\nApex Academy me aap fees ko ya toh **1-time upfront** pay kar sakte hain (jis par aapko flat **5% early bird concession** milta hai) ya phir **3 installments** me pay kar sakte hain:\n* **Installment 1:** At the time of admission.\n* **Installment 2:** Admission ke **60 days** baad.\n* **Installment 3:** Admission ke **120 days** baad.\n\n*(Note: Exact fee amount aapke selected course jaise JEE ya NEET ke base fee par depend karta hai. Jaise NEET 2027 Classroom Coaching ki total fee ₹1,20,000 hai, jisme pehli installment ₹40,000 ki hoti hai).*\n\n### 2. Batch Timings & Seat Availability:\nHamare paas alag-alag courses ke liye verified batch schedules available hain. Aap apni convenience ke hisaab se dekh sakte hain:\n\n* **JEE Target Batch A1 (Morning):** \n  * Timings: 08:00 AM - 01:30 PM\n  * Start Date: 20: Nov 2026\n  * Seats Left: Sirf 8 seats bachi hain!\n* **JEE Target Jaipur Batch J1:** \n  * Timings: 09:00 AM - 02:30 PM\n  * Start Date: 25: Nov 2026\n  * Seats Left: 17 seats bachi hain.\n* **NEET Achiever Super 40 Batch:** \n  * Timings: 08:30 AM - 02:00 PM\n  * Start Date: 18: Nov 2026\n  * Seats Left: Sirf 2 seats bachi hain!\n\nAapko kis course (JEE ya NEET) ke liye enrollment karni hai, mujhe batayein taaki main aapko uski exact fee aur seat status confirm kar sakoon. Aap hamara **Free 3-day classroom demo pass** bhi book kar sakte hain taaki aap classes ko pehle experience kar sakein. \n\nKya main aapke liye koi demo class ya 1-on-1 counselor call schedule kar doon?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Fee Schedule Test",
+            "score": 0.43429545541191994,
+            "text": "NEET 2027 Classroom Coaching fee is ₹1,20,000. Installment 1 is ₹40,000."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.38487355077272467,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.38487355077272467,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 4030,
+      "createdAt": "2026-11-09T06:17:19.932Z"
+    },
+    {
+      "id": "exec-1794205026602-345",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is the recipe for Hyderabadi Biryani?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy (IIT-JEE & NEET) ka admission assistant aur educational mentor. \n\nMain cooking recipes ya non-educational topics mein help nahi kar sakta, kyunki mera focus sirf aapki studies, exams, career guidance, aur Apex Academy ke admission process par hai. \n\nAgar aapko IIT-JEE, NEET, ya Foundation courses ke baare mein kuch bhi jaanna ho—jaise batches, fees, scholarships, ya preparation strategy—toh aap mujhse bilkul pooch sakte hain. \n\nKya main aapki kisi study-related query ya admission process mein help karoon? Aap chahein toh ek free trial demo class bhi book kar sakte hain!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.2649248997462579,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.2649248997462579,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.2649248997462579,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2210,
+      "createdAt": "2026-11-09T06:17:06.602Z"
+    },
+    {
+      "id": "exec-1794205024371-964",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is the hostel fee in Kota campus?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy ke Kota campus mein hostel aur mess facility available hai, aur iska fee **₹12,000 per month** hai. \n\nIs fee mein aapko air-cooled single/twin rooms, nutritious vegetarian food, aur 24/7 security milti hai. \n\nAgar aap ya aapke parents iske baare mein aur kuch detail mein janna chahte hain ya campus visit karna chahte hain, toh aap Monday to Saturday (10 AM to 6 PM) ke beech hamare senior faculty ke sath 1-on-1 career counselling book kar sakte hain. Bataiye, kya main aapki koi aur help kar sakta hoon?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.8223762308174891,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.8223762308174891,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.8223762308174891,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2464,
+      "createdAt": "2026-11-09T06:17:04.371Z"
+    },
+    {
+      "id": "exec-1794205021888-623",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "How many seats are left in the Morning Kota JEE batch?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy mein aapka swagat hai. \n\nAapne Morning Kota JEE batch ke baare mein poocha, toh verified schedule ke mutabiq hamare **JEE Target Batch A1 (Morning)** mein abhi **8 seats left** hain! \n\nBatch ki details yeh hain:\n- **Timings:** 08:00 AM - 01:30 PM\n- **Start Date:** 20th November 2026\n\nKyunki seats limited hain (sirf 8 bachi hain), main aapko suggest karunga ki aap jaldi se apna registration secure kar lein. Kya aap is batch ke liye apna free 3-day classroom demo pass ya counseling session book karna chahenge?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5967224314943482,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5967224314943482,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5967224314943482,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2220,
+      "createdAt": "2026-11-09T06:17:01.888Z"
+    },
+    {
+      "id": "exec-1794205019646-923",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is the 75% board criteria for JEE admission?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. Aapka sawaal bohot important hai, toh chaliye isko clear karte hain.\n\nJEE (Joint Entrance Examination) ke liye JoSAA (Joint Seat Allocation Authority) counselling aur NITs, IIITs, ya CFTIs mein admission ke liye 75% board criteria ka rule yeh hai:\n\n1. **General/OBC/EWS Candidates:** Aapke Class 12th board exams (ya equivalent exam) mein aggregate **minimum 75% marks** hone chahiye, ya phir aap apne respective board ke **Top 20 percentile** students mein hone chahiye.\n2. **SC/ST Candidates:** SC/ST category ke students ke liye aggregate passing marks ka criteria **65%** hai.\n3. **Subjects Consideration:** Aggregate percentage calculate karne ke liye usually 5 subjects (jaise Physics, Chemistry, Mathematics, ek language, aur ek any subject) ke marks consider kiye jaate hain.\n\n*(Note: JEE Main ka exam dene ke liye Class 12th percentage ki koi restriction nahi hai, lekin NIT/IIIT/CFTI mein admission lene ke liye yeh 75% criteria mandatory hai.)*\n\nAgar aap Apex Academy ke **JEE Target 2027 Comprehensive Classroom Program** ya kisi aur batch ke baare mein kuch aur jaanna chahte hain (jaise fees, installments, ya scholarship ke liye Apex Aptitude Test - AAT), toh zaroor batayein! Aap hamari **free 3-day classroom demo pass** bhi try kar sakte hain. \n\nKoi aur doubt ho toh bina kisi jhikjhak ke pooch sakte hain!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6155698131398961,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6155698131398961,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6155698131398961,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3435,
+      "createdAt": "2026-11-09T06:16:59.646Z"
+    },
+    {
+      "id": "exec-1794205016179-544",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "How many attempts are allowed for JEE Advanced?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main hoon **AdmitFlow AI**, Apex Academy ka admission assistant aur educational mentor. \n\nAapka sawal JEE Advanced ke attempts ke baare mein hai, toh iska official rule yeh hai:\n\nEk student JEE Advanced ke liye **lagataar 2 saal mein maximum 2 attempts** de sakta hai:\n1. Pehla attempt jis saal aapne apni Class 12th (ya equivalent exam) pass ki ho.\n2. Doosra attempt uske theek agle saal.\n\n*Note: Kuch saal pehle tak attempt limits ke rules mein kuch exceptions aaye the, lekin standard rule yahi hai ki aap 12th ke baad sirf 2 consecutive years tak JEE Advanced de sakte hain.*\n\nAgar aap **Apex Academy** ke JEE Main + Advanced 2027 Comprehensive Program ke baare mein kuch janna chahte hain (jaise ki hamari fee ₹1,45,000 jo 3 installments mein di ja sakti hai, ya hamara AAT scholarship test jisse aapko up to 40% tak ki scholarship mil sakti hai), toh aap mujhse pooch sakte hain.\n\nKya aap apne preparation ke liye koi free 3-day classroom demo pass book karna chahenge taaki aap hamari faculty se directly padh kar dekh sakein?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.7920173009215741,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.7920173009215741,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.7920173009215741,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2754,
+      "createdAt": "2026-11-09T06:16:56.179Z"
+    },
+    {
+      "id": "exec-1794205013404-448",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is the upper age limit for NEET UG?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. \n\nAapka question NEET UG ke upper age limit ke baare mein hai. National Testing Agency (NTA) ke current guidelines ke anusar, NEET UG ke liye **koi upper age limit nahi hai**. Iska matlab yeh hai ki agar aap minimum age criteria (jo ki usually 17 years hai by December 31 of the admission year) ko meet karte hain, toh aap kisi bhi umra mein NEET UG exam de sakte hain.\n\nAgar aap NEET ya JEE ki taiyari ya hamare courses (jaise NEET Achiever Dropper Batch ya JEE Target Program) ke baare mein kuch aur janna chahte hain, toh aap bilkul pooch sakte hain. Hum aapko ek free 3-day classroom demo class attend karne ke liye bhi invite karte hain taaki aap hamari faculty ki teaching quality khud dekh sakein. \n\nKya aapko kisi specific batch ya admission process ke baare mein jankari chahiye?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Fee Schedule Test",
+            "score": 0.4479042369440195,
+            "text": "NEET 2027 Classroom Coaching fee is ₹1,20,000. Installment 1 is ₹40,000."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.3719277084487893,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.3719277084487893,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-neet-achiever",
+          "name": "NEET Achiever Dropper Batch",
+          "fee": 125000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3048,
+      "createdAt": "2026-11-09T06:16:53.404Z"
+    },
+    {
+      "id": "exec-1794205010335-206",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Is your study material better than PhysicsWallah?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Dekhiye, har institute ki apni strengths hoti hain aur PhysicsWallah bhi kaafi achha platform hai. Lekin main aapko Apex Academy ke study material aur pedagogical approach ke baare mein zaroor bata sakta hoon. \n\nHamara study material specially IIT-JEE aur NEET ke latest exam patterns ko dhyan mein rakh kar design kiya gaya hai, jismein NCERT concepts ke saath-with previous years' questions (PYQs) aur structured practice sheets milti hain. Iske alawa, hamare programs mein kuch special features hain jaise:\n- Dedicated mentors (jaise NEET Dropper batch mein har 25 students par ek mentor)\n- Daily 2-hour doubt clearing counters\n- Regular weekly computer-based tests\n\nMain kisi bhi institute ko compare nahi karunga, kyunki sabse important yeh hai ki aapko kiska teaching style samajh aata hai. Iske liye sabse behtar tareeqa yeh hai ki aap hamara **Free 3-day classroom demo pass** use karein! Aap khud classes attend karke dekh sakte hain ki hamari padhane ki shaili aur material aapke liye kitna helpful hai.\n\nKya aap demo class ke liye ya kisi course ke baare mein detail mein janna chahte hain? Aap Monday to Saturday (10 AM - 6 PM) ke beech hamare senior faculty se 1-on-1 career counselling bhi le sakte hain!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.22243928799522097,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.22243928799522097,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.22243928799522097,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2554,
+      "createdAt": "2026-11-09T06:16:50.335Z"
+    },
+    {
+      "id": "exec-1794205007762-163",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Why should I join you instead of Allen or Resonance?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Dekhiye, har institute ki apni strengths hoti hain, aur Allen ya Resonance dono hi bade aur reputed naam hain. Lekin Apex Academy mein hamara focus **personalized attention aur student support** par sabse zyada hota hai, jisse aapko bheed mein khona na pade. \n\nHum apne students ko kya special provide karte hain, wo aap yahan dekh sakte hain:\n- **Dedicated Mentorship:** Jaise ki hamare NEET dropper batches mein har 25 students par ek dedicated mentor assign hota hai jo aapki progress track karta hai.\n- **Daily Doubt Clearing:** Concepts clear rakhne ke liye daily 2-hour ka dedicated doubt clearing counter milta hai.\n- **Regular Testing:** Latest NTA/JEE pattern par based weekly computer-based tests, taaki aapki exam readiness strong ho.\n- **Flexible Guidance & Transparent Policies:** Monday to Saturday (10 AM to 6 PM) senior faculty ke sath 1-on-1 career counseling available hoti hai. \n\nSelection kisi bhi coaching se nahi, balki aapki apni mehnat, consistent practice, aur discipline se hota hai—hamara kaam sirf aapko sahi rasta aur best mentorship dena hai. \n\nAgar aap khud quality judge karna chahte hain, toh aap hamara **Free 3-day classroom demo pass** le sakte hain aur classes attend karke khud decide kar sakte hain! \n\nKya aap kisi specific course (jaise JEE ya NEET) ke baare mein janna chahte hain? Aap bataiye, main poori help karunga!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.2459490541719044,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.2459490541719044,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.2459490541719044,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2844,
+      "createdAt": "2026-11-09T06:16:47.762Z"
+    },
+    {
+      "id": "exec-1794205004896-121",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Can Class 10 passed students join the 1-year Dropper batch?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. \n\nNahi, Class 10 passed students 1-year Dropper batch mein directly join nahi kar sakte. Dropper batches (jaise hamara **NEET Achiever Dropper Batch**) specially un students ke liye hote hain jo apni Class 12 ya board exams pass kar chuke hain aur competitive exam ke liye 1 saal dedicated preparation karna chahte hain.\n\nAgar aapne abhi Class 10 pass ki hai, toh aapke liye hamara **Olympiad & NTSE Foundation Batch (Class 9 & 10)** ya fir 2-year regular program bilkul sahi rahega, jo aapke concepts ko strong banayega.\n\nAapko kaunse exam (JEE ya NEET) ki preparation karni hai? Aap chahein toh Monday se Saturday, subah 10 AM se shaam 6 PM ke beech hamare senior faculty ke sath **1-on-1 free career counseling session** book kar sakte hain taaki aapko bilkul sahi guidance mil sake. \n\nKya main aapke liye counseling session schedule karwa dun?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6592076616359024,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6592076616359024,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6592076616359024,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2634,
+      "createdAt": "2026-11-09T06:16:44.896Z"
+    },
+    {
+      "id": "exec-1794205002239-40",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Is coaching 100% compulsory to crack JEE?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main hoon AdmitFlow AI, Apex Academy ka admission assistant aur educational mentor. \n\nAapke sawal par seedhi aur absolute honesty ke sath baat karte hain: **Nahi, coaching 100% compulsory nahi hai JEE crack karne ke liye.** \n\nBahut se students self-study, standard textbooks (jaise NCERT, HC Verma, cengage, etc.), online resources, aur PYQs (Previous Year Questions) ki madad se bhi JEE crack karte hain. Success ke liye sabse important cheez aapki khud ki dedication, consistent practice, time management, aur self-discipline hai. Koi bhi coaching institute aapko selection ki 100% guarantee nahi de sakta—selection sirf aapki mehnat par depend karta hai.\n\n**Toh fir coaching ka kya fayda hai?**\nCoaching ya ek accha mentor aapke safar ko thoda asaan aur structured bana deta hai:\n1. **Structured Study Plan:** Aapko kya padhna hai aur kis sequence mein padhna hai, iska ek proper roadmap mil jata hai.\n2. **Expert Guidance:** Experienced subject mentors aapke concepts ko clear karne aur complex problems ko solve karne ke shortcut/analytical approaches sikhate hain.\n3. **Regular Testing & Analysis:** Mock tests aur test series se aapko apni All-India standing, weak areas, aur time management ka andaza lagta hai.\n\nAgar aap apni preparation ko ek disciplined environment aur expert mentorship ke sath streamline karna chahte hain, toh aap hamare **JEE Main + Advanced 2027 Comprehensive Classroom Program** ke baare mein soch sakte hain (jiska base fee ₹1,45,000 hai, jo 3 installments mein payable hai aur AAT scholarship ke through up to 40% tak ki chhoot mil sakti hai).\n\nKya aap hamari teaching methodology ko khud judge karna chahte hain? Aap hamare kisi bhi ongoing batch ka **free 3-day classroom demo pass** le sakte hain! \n\nBataiye, kya aapko JEE preparation strategy ya hamare programs ke baare mein kuch aur jaan na hai?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Fee Schedule Test",
+            "score": 0.5244892280546541,
+            "text": "NEET 2027 Classroom Coaching fee is ₹1,20,000. Installment 1 is ₹40,000."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5208366929961012,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5208366929961012,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 4780,
+      "createdAt": "2026-11-09T06:16:42.239Z"
+    },
+    {
+      "id": "exec-1794204997439-851",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Can I directly appear in JEE Advanced without clearing JEE Main?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. Aapka yeh sawaal bahut important hai, chaliye iska clear aur accurate answer dete hain.\n\nNahi, aap **direct JEE Advanced mein appear nahi ho sakte** without clearing JEE Main. Official guidelines ke mutabiq, JEE Advanced ke liye eligibility process yeh hai:\n\n1. **First Step - JEE Main:** Sabse pehle aapko JEE Main exam clear karna hota hai aur top percentile mein aakar top 2,50,000 (approximate) eligible candidates mein jagah banani padti hai.\n2. **Second Step - JEE Advanced:** Jo students JEE Main clear karte hain, sirf wahi log JEE Advanced ke liye register karne aur exam dene ke eligible hote hain.\n\nIsliye, aapka poora focus shuru se hi ek strong foundational preparation par hona chahiye, jisse aap JEE Main aur Advanced dono ko ek saath crack kar sakein. \n\nAgar aap **Apex Academy ke JEE Target Batch** ke through apni taiyari shuru karna chahte hain, toh hamare paas dedicated classroom programs hain (jaise Morning Batch A1, jisme abhi limited seats available hain). Aap chahein toh hamari **free 3-day classroom demo class** join karke humari faculty ke teaching style ko khud experience kar sakte hain.\n\nKya aap iske baare mein ya hamare admission process aur scholarship (AAT) ke baare mein kuch aur jaanna chahenge?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.885739606915289,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.885739606915289,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.885739606915289,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2962,
+      "createdAt": "2026-11-09T06:16:37.439Z"
+    },
+    {
+      "id": "exec-1794204994458-691",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Is 100% board score mandatory to sit for NEET UG?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Arre bilkul nahi! 100% board score bilkul bhi mandatory nahi hai NEET UG ke liye. \n\nNTA (National Testing Agency) ke official rules ke mutabiq, NEET UG mein baithne ke liye aapko Class 12 mein Physics, Chemistry, Biology/Biotech, aur English subjects ke saath pass hona zaroori hai. General category ke students ke liye Class 12 mein PCB (Physics, Chemistry, Biology) ka aggregate minimum 50% hona chahiye (reserved categories ke liye yeh criteria thoda kam hota hai). 100% score laane ka koi pressure nahi hai!\n\nAgar aap NEET ki taiyari shuru karna chahte hain, toh Apex Academy ka **NEET Achiever Dropper Batch** ya hamare regular programs join kar sakte hain, jahan hamare experienced subject mentors aapko NTA pattern par rigorous preparation karate hain. \n\nAap chahein toh hamare **free 3-day classroom demo pass** ke liye bhi register kar sakte hain taaki aap teaching quality khud check kar sakein. Koi aur doubt ho NEET eligibility ya hamare batches ko lekar, toh zaroor batayein!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.47501277622732885,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.47501277622732885,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.47501277622732885,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-neet-achiever",
+          "name": "NEET Achiever Dropper Batch",
+          "fee": 125000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2947,
+      "createdAt": "2026-11-09T06:16:34.458Z"
+    },
+    {
+      "id": "exec-1794204991492-262",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "How should I prepare for JEE?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "JEE ki best preparation strategy: 1) NCERT aur core concepts ko strong karein, 2) Daily numericals aur Previous Year Questions (PYQs) solve karein, 3) Regular timed mock tests dekar apni mistakes ko analyze karein, 4) Consistent daily routine aur revision maintain karein. Kya aap hamare expert mentors ke saath ek free counseling session book karna chahte hain?",
+        "isGrounded": false,
+        "modelUsed": "DETERMINISTIC_FALLBACK",
+        "fallbackUsed": true,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.517309503721838,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.517309503721838,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.517309503721838,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 520,
+      "createdAt": "2026-11-09T06:16:31.492Z"
+    },
+    {
+      "id": "exec-1794204990953-157",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is the difference between JEE Main and Advanced?",
+        "languagePreference": "english"
+      },
+      "outputPayload": {
+        "answer": "JEE Main and JEE Advanced have distinct objectives: 1) JEE Main is the screening test for NITs, IIITs, and CFTIs, focusing on speed, broad syllabus coverage, and accuracy. 2) JEE Advanced is exclusively for admission to IITs, testing deep multi-concept problem-solving and higher analytical depth. Would you like to discuss our focused preparation batches?",
+        "isGrounded": false,
+        "modelUsed": "DETERMINISTIC_FALLBACK",
+        "fallbackUsed": true,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.8648867506427509,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.8648867506427509,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.8648867506427509,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 701,
+      "createdAt": "2026-11-09T06:16:30.953Z"
+    },
+    {
+      "id": "exec-1794204990232-496",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "NEET dropper batch fee kitni hai?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Apex Academy (IIT-JEE & NEET) mein NEET Achiever Dropper Batch ki total base fee ₹1,25,000 hai. Isko aap 3 installments mein pay kar sakte hain (minimum first installment ₹35,000). Kya aap batch timings ya counseling session ke baare mein jaanna chahenge?",
+        "isGrounded": true,
+        "modelUsed": "DETERMINISTIC_FALLBACK",
+        "fallbackUsed": true,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.8306090920125888,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.8306090920125888,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.8306090920125888,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-neet-achiever",
+          "name": "NEET Achiever Dropper Batch",
+          "fee": 125000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 871,
+      "createdAt": "2026-11-09T06:16:30.232Z"
+    },
+    {
+      "id": "exec-1794204989340-44",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Can I get 100% direct scholarship without taking any exam?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy mein aapka swagat hai. \n\nDirectly 100% scholarship ka option nahi milta hai bina kisi exam ke. Apex Academy mein scholarship ke liye aapko **Apex Talent Scholarship Exam (ATSE)** dena hoga, jo har Sunday conduct kiya jata hai. Is exam ke score ke basis par aapko tuition fees par **up to 90% tak ka scholarship** mil sakta hai. \n\nHaan, agar aapko direct admission lena ho, toh woh aapke Class 10 ya Class 12 ke marks ke basis par ho sakta hai. Iske alawa agar aapko scholarship test ya admission process ke baare mein aur detail mein janna hai, toh aap hamare senior faculty se Monday to Saturday (10 AM to 6 PM) ke beech 1-on-1 career counselling bhi le sakte hain. \n\nKya aap ATSE (scholarship exam) ke liye register karna chahenge ya koi aur doubt hai?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6948585843859025,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6948585843859025,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6948585843859025,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 4583,
+      "createdAt": "2026-11-09T06:16:29.340Z"
+    },
+    {
+      "id": "exec-1794204984738-92",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Do you have batches with strictly 5 students only?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy mein aapka swagat hai. \n\nNahi, humare paas strictly 5 students wale batches nahi hote hain. Humari batches standard classroom size ke hisaab se hoti hain, jisme interactive learning aur healthy peer competition milti hai. \n\nJaise ki humare verified prospectus ke mutabiq, humare Dropper NEET batch mein har 25 students par ek dedicated mentor assign kiya jaata hai taaki personal attention mil sake, aur daily 2-hour ka dedicated doubt clearing counter bhi hota hai.\n\nAgar aap teaching quality khud dekhna chahte hain, toh aap humara **free 3-day classroom demo pass** le sakte hain. \n\nKya aap kisi specific course (jaise JEE ya NEET) ke baare mein janna chahte hain? Aap Monday to Saturday subah 10 AM se shaam 6 PM ke beech humare senior faculty ke sath 1-on-1 counseling bhi book kar sakte hain!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4747948744919098,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4747948744919098,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4747948744919098,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 7334,
+      "createdAt": "2026-11-09T06:16:24.738Z"
+    },
+    {
+      "id": "exec-1794204977383-396",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Are all your teachers IIT Bombay Gold Medalists?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. \n\nAapke sawaal ka seedha aur honest jawab yeh hai ki **nahi, hum yeh claim nahi karte ki hamare sabhi teachers IIT Bombay ke Gold Medalists hain.** \n\nHumari faculty mein IIT-JEE aur NEET ke highly experienced aur expert subject mentors hain, jo students ko concepts clear karne, problem-solving skills develop karne aur exam ke liye fully prepare karne mein expert hain. \n\nMain yeh recommend karunga ki aap kisi bhi claim par believe karne ke bajaye khud quality judge karein. Aap hamare **free 3-day classroom demo pass** ke liye register kar sakte hain aur classrooms mein aakar khud hamari teaching methodology aur faculty ka experience dekh sakte hain! \n\nKya main aapke liye demo class ya kisi course (jaise JEE ya NEET) ki details share karoon?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.4656224913160997,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.4656224913160997,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.4656224913160997,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 7667,
+      "createdAt": "2026-11-09T06:16:17.383Z"
+    },
+    {
+      "id": "exec-1794204969695-843",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Do you guarantee AIR 1 rank in JEE?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. \n\nDekhiye, ek honest educational mentor ke taur par main aapko bilkul clear bataana chahunga ki **koi bhi coaching institute AIR 1 ya kisi bhi rank ki 100% guarantee nahi de sakta.** \n\nJEE Advanced jaisa tough exam crack karna kisi ek factor par depend nahi karta—yeh aapki apni personal dedication, consistent daily practice, time management, aur disciplined hard work par 100% depend karta hai. Apex Academy mein humare experienced IIT-JEE subject mentors aapko best structured study material, regular doubt solving, aur rigorous mock tests ke zariye aapki preparation ko best direction dene ki puri guarantee dete hain, taaki aap apni maximum potential achieve kar sakein.\n\nAgar aap hamari teaching methodology ko khud judge karna chahte hain, toh aap hamara **free 3-day classroom demo pass** bhi try kar sakte hain. \n\nKya aap JEE Target 2027 batch ya hamare admission process ke baare mein kuch aur jaan na chahenge? Aap apni queries pooch sakte hain!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.529782680270558,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.529782680270558,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.529782680270558,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2374,
+      "createdAt": "2026-11-09T06:16:09.695Z"
+    },
+    {
+      "id": "exec-1794204967300-424",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "I heard that I can get full refund even after 2 months of batch start.",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Aapne jo suna hai, wo thoda galat hai. Apex Academy ke official fee policy ke mutabiq, full refund ki rule aisi nahi hai. \n\nHamari policy yeh kehti hai ki:\n- Agar aap batch start hone ke **15 days** ke andar withdrawal ke liye request karte hain, toh aapko 100% refund mil jayega (ismein ₹2,000 processing fee deduct hogi).\n- Agar aap **16 se 30 days** ke beech mein request karte hain, toh 50% refund milta hai.\n- Aur agar **30 days ke baad** aap withdraw karte hain, toh koi refund nahi milta. \n\nToh 2 mahine (60 days) baad full refund ka koi rule nahi hai. \n\nAgar aapko admissions, batches, ya scholarships (jaise ATSE ke through up to 90% scholarship) se related koi bhi confusion clear karni ho, toh aap hamare senior faculty ke sath Monday to Saturday, 10 AM to 6 PM ke beech 1-on-1 career counselling session book kar sakte hain ya apna free 3-day classroom demo pass le sakte hain. Bataiye, kaise madad karoon?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.626034550145383,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.626034550145383,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.626034550145383,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3256,
+      "createdAt": "2026-11-09T06:16:07.300Z"
+    },
+    {
+      "id": "exec-1794204964023-67",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Someone told me your NEET Dropper batch lasts for 3 years, is that true?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Arre nahi, bilkul nahi! Yeh bilkul galat information hai. \n\nApex Academy ka **NEet Achiever Dropper Batch (NEET-DRP)** ek 1-year intensive program hai, jiska total duration **40 weeks** ka hota hai. Is batch mein humara focus pure saal aapke syllabus ko complete karne, daily 2-hour doubt clearing sessions, dedicated mentors (1 mentor for every 25 students), aur latest NTA NEET pattern par weekly computer-based tests ke through aapki preparation ko strong banana hota hai.\n\nDropper batch 3 saal ka bilkul nahi hota hai! \n\nAgar aap NEET preparation ya batch ke baare mein aur details jaanna chahte hain, toh aap hamara **free 3-day classroom demo pass** bhi try kar sakte hain ya Monday to Saturday subah 10 AM se shaam 6 PM ke beech hamare senior faculty ke sath 1-on-1 career counselling session book kar sakte hain. \n\nBataiye, kya main aapki isme koi aur madad kar sakta hoon?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4318175655443137,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4318175655443137,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4318175655443137,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-neet-achiever",
+          "name": "NEET Achiever Dropper Batch",
+          "fee": 125000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3632,
+      "createdAt": "2026-11-09T06:16:04.023Z"
+    },
+    {
+      "id": "exec-1794204960371-38",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "A counselor told me JEE fee is only ₹50,000 total, is that correct?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. \n\nMain aapko batana chahunga ki shayad thoda misunderstanding hua hai. ₹50,000 poari fee nahi hai, balki yeh hamare JEE Main + Advanced 2027 Comprehensive Classroom Program ki **first installment** hai jo admission ke time pay karni hoti hai.\n\nIs program ki total tuition fee **₹1,45,000** hai, jise aap 3 easy installments mein pay kar sakte hain:\n1. **1st Installment:** ₹50,000 (Admission ke time)\n2. **2nd Installment:** ₹50,000 (60 days ke baad)\n3. **3rd Installment:** ₹45,000 (120 days ke baad)\n\nHaan, agar aap fee mein concession chahte hain, toh aap hamara **Apex Aptitude Test (AAT)** de sakte hain, jiske score ke basis par aapko up to 40% tak ka scholarship mil sakta hai. \n\nKya aap fee structure ya hamare upcoming batches (jaise Morning Batch ya Jaipur Batch) ke baare mein kuch aur details janna chahenge? Aap chahein toh ek free 3-day classroom demo pass bhi book kar sakte hain!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6355775910519987,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6355775910519987,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6355775910519987,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2249,
+      "createdAt": "2026-11-09T06:16:00.371Z"
+    },
+    {
+      "id": "exec-1794204958102-280",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is your refund policy for online correspondence courses?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy ke fee policy ke mutabiq, hamara standard refund rule yeh hai:\n\n- Agar aap batch start hone ke **15 days** ke andar withdrawal request karte hain, toh aapko **100% refund** mil jayega (sirf ₹2,000 processing fee deduct hogi).\n- Agar request **16 se 30 days** ke beech mein ki gayi, toh **50% refund** milega.\n- Aur agar **30 days ke baad** request karte hain, toh koi refund nahi milega.\n\nEk baat aur clear kar doon ki hamare paas filhal online correspondence courses ka koi separate policy mentioned nahi hai, yeh hamara general classroom/batch withdrawal policy hai. \n\nAgar aapko apne course ya admission se related koi aur doubt hai, toh aap hamare senior faculty ke sath Monday to Saturday (10 AM to 6 PM) 1-on-1 career counselling bhi book kar sakte hain! Bataiye, kya main aapki isme koi aur help kar sakta hoon?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4897835179573242,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4897835179573242,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4897835179573242,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2372,
+      "createdAt": "2026-11-09T06:15:58.102Z"
+    },
+    {
+      "id": "exec-1794204955709-163",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Do you have French or German language classes?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy mein humara focus strictly **IIT-JEE aur NEET** preparation par hi hota hai. Humare prospectus ya curriculum mein French ya German jaisi foreign language classes offer nahi ki jaati hain. \n\nHumara pura dhyan Physics, Chemistry, Mathematics aur Biology ke core concepts par hota hai taaki aap engineering ya medical entrance exams mein apna best de sakein.\n\nAgar aapko JEE ya NEET preparation, batches, ya admission process se related koi bhi jankari chahiye, toh aap mujhse pooch sakte hain. Aap Monday to Saturday (10 AM to 6 PM) hamare senior faculty ke sath 1-on-1 career counselling bhi book kar sakte hain ya free 3-day classroom demo pass ke liye bhi register kar sakte hain!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.28148822186350575,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.28148822186350575,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.28148822186350575,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 6705,
+      "createdAt": "2026-11-09T06:15:55.709Z"
+    },
+    {
+      "id": "exec-1794204948985-423",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Do you offer UPSC Civil Services IAS coaching?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Main AdmitFlow AI hoon, Apex Academy se. \n\nNahi, hum **UPSC Civil Services (IAS) coaching offer nahi karte hain**. Apex Academy strictly **IIT-JEE (Main + Advanced), NEET (Medical), aur Foundation (Class 9 & 10 Olympiad/NTSE)** ki preparation ke liye specialized hai. \n\nAgar aapka ya aapke kisi janne wale ka focus engineering ya medical entrance exams (jaise JEE ya NEET) crack karne par hai, toh hum aapki poori madad kar sakte hain! \n\nKya aapko JEE ya NEET courses, fee structure, ya hamari free 3-day demo class ke baare mein kuch aur jaankari chahiye? Aap batayein, main aapki poori sahayata karunga!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Fee Schedule Test",
+            "score": 0.438090158718203,
+            "text": "NEET 2027 Classroom Coaching fee is ₹1,20,000. Installment 1 is ₹40,000."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.21172373191364416,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.21172373191364416,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 6301,
+      "createdAt": "2026-11-09T06:15:48.985Z"
+    },
+    {
+      "id": "exec-1794204942666-276",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Batch timing aur installment schedule dono detail me samjhao.",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Fee Schedule Test",
+            "score": 0.43429545541191994,
+            "text": "NEET 2027 Classroom Coaching fee is ₹1,20,000. Installment 1 is ₹40,000."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.38487355077272467,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.38487355077272467,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 6228,
+      "createdAt": "2026-11-09T06:15:42.666Z"
+    },
+    {
+      "id": "exec-1794204936420-269",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Please explain the complete refund policy in formal English.",
+        "languagePreference": "english"
+      },
+      "outputPayload": {
+        "answer": "Here is the complete refund policy for Apex Academy as outlined in our official fee policy:\n\n* **Within 15 Days of Batch Start:** A 100% refund of the paid fees is provided, subject to a nominal ₹2,000 processing fee deduction.\n* **Between 16 to 30 Days of Batch Start:** A 50% refund of the paid fees is applicable.\n* **After 30 Days:** No refunds will be processed after 30 days from the commencement of the batch.\n\nIf you have any further questions regarding admissions, installments, or would like to schedule a free 3-day classroom demo pass, please feel free to ask!",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4855522822879311,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4855522822879311,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.4855522822879311,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3979,
+      "createdAt": "2026-11-09T06:15:36.420Z"
+    },
+    {
+      "id": "exec-1794204932421-880",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "कृपया मुझे स्कॉलरशिप टेस्ट (AAT/ATSE) के बारे में बताएं।",
+        "languagePreference": "hindi"
+      },
+      "outputPayload": {
+        "answer": "नमस्ते! Apex Academy में आपका स्वागत है। \n\nApex Talent Scholarship Exam (ATSE) के बारे में जानकारी नीचे दी गई है:\n\n* **स्कॉलरशिप:** ATSE के स्कोर के आधार पर आपको ट्यूशन फीस पर **90% तक की स्कॉलरशिप** मिल सकती है।\n* **आयोजन (Timing):** यह परीक्षा हर **रविवार (Every Sunday)** आयोजित की जाती है।\n* **अन्य विकल्प:** इसके अलावा, आप Class 10th या 12th के मार्क्स के आधार पर भी डायरेक्ट एडमिशन ले सकते हैं।\n\nक्या आप इस रविवार के ATSE टेस्ट के लिए रजिस्ट्रेशन करना चाहते हैं या फिर हमारे किसी कोर्स (जैसे JEE या NEET) के बारे में और जानकारी लेना चाहते हैं? आप चाहें तो हमारे काउंसलर से बात करने के लिए 1-on-1 काउंसलिंग सेशन भी बुक कर सकते हैं (सोमवार से शनिवार, सुबह 10:00 AM से शाम 6:00 PM तक)।",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.3176325057516007,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.3176325057516007,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.3176325057516007,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2300,
+      "createdAt": "2026-11-09T06:15:32.421Z"
+    },
+    {
+      "id": "exec-1794204930100-532",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Are there morning batch timings in Kota?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Haan bilkul! Apex Academy mein Kota campus ke liye morning batch available hai. \n\nHamaari **JEE Target Batch A1** ek morning batch hai, jiska schedule **08:00 AM - 01:30 PM** ka hai aur yeh 20 November 2026 se start ho rahi hai. \n\nIs batch mein abhi sirf **8 seats left** hain, toh agar aap join karna chahte hain toh jaldi register karein! Aap chahein toh hamari free 3-day classroom demo class bhi attend karke teaching quality check kar sakte hain. \n\nKya aapko batch registration ya scholarship (AAT test) ke baare mein kuch aur jaankari chahiye?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5697481234518657,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5697481234518657,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.5697481234518657,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2469,
+      "createdAt": "2026-11-09T06:15:30.100Z"
+    },
+    {
+      "id": "exec-1794204927611-29",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Can I pay this in installments?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Haan bilkul! Aap apni course fees ko easily **3 equal installments** mein pay kar sakte hain. \n\nInstallments ka schedule kuch is tarah rehta hai:\n- **1st Installment:** Admission ke time par.\n- **2nd Installment:** Admission ke 60 days baad.\n- **3rd Installment:** Admission ke 120 days baad.\n\nAgar aap fee **one-time upfront** pay karte hain, toh aapko total tuition fee par **5% ka early bird discount** bhi mil jayega! \n\nKya aap kisi specific course (jaise JEE ya NEET) ke baare mein baat kar rahe hain, taaki main aapko exact installment amount bata sakoon? Aap chahein toh hamare senior faculty se 1-on-1 counseling ke liye bhi connect kar sakte hain ya free 3-day demo class le sakte hain.",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.75,
+            "text": "Fee Payment & Installments: 3 equal installments. 5% early bird discount on one-time payment. Target JEE 2027 base fee is ₹1,45,000. NEET Achiever dropper batch base fee is ₹1,25,000."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6423113063461274,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          },
+          {
+            "title": "Apex Academy Official Prospectus & Fee Policy 2026-27",
+            "score": 0.6423113063461274,
+            "text": "APEX ACADEMY OFFICIAL ADMISSION BROCHURE & FEE POLICY 1. Admission & Scholarship: - Direct admission based on Class 10/12 marks or Apex Talent Scholarship Exam (ATSE). Up to 90% scholarship available on tuition fees through ATSE conducted every Sunday. - Hostel and Mess facility available at Kota campus: ₹12,000/month (Air-cooled single/twin rooms, nutritious vegetarian food, 24/7 security). 2. Fee Payment & Installments: - Fees can be paid in 3 equal installments or 1-time upfront payment with a flat 5% early bird concession. - Installment 1: At admission. Installment 2: After 60 days. Installment 3: After 120 days. - Refund Policy: 100% refund (minus ₹2,000 processing fee) if withdrawal requested within 15 days of batch start. 50% refund between 16-30 days. No refund after 30 days. 3. Counseling & Trial Classes: - Free 3-day classroom demo pass provided to registered students. - 1-on-1 career counselling available with senior faculty on Monday to Saturday 10 AM to 6 PM. 4. Dropper NEET Batch Special Features: - Daily 2-hour doubt clearing counter. Dedicated mentor assigned to every 25 students. Weekly computer-based test on latest NTA NEET pattern."
+          }
+        ],
+        "matchedCourse": null
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2295,
+      "createdAt": "2026-11-09T06:15:27.611Z"
+    },
+    {
+      "id": "exec-1794204925296-914",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is the fee for the classroom course for JEE 2027?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy mein aapka swagat hai. Main AdmitFlow AI hoon. \n\nJEE Target 2027 (Main + Advanced) Comprehensive Classroom Program ke liye hamari total tuition fee **₹1,45,000** hai. Isko aap easily 3 convenient installments mein pay kar sakte hain:\n\n* **1st Installment:** ₹50,000 (Admission ke time par)\n* **2nd Installment:** ₹50,000 (60 days ke baad)\n* **3rd Installment:** ₹45,000 (120 days ke baad)\n\nAgar aap aur bhi fee benefit chahte hain, toh aap hamara **Apex Aptitude Test (AAT)** de sakte hain, jiske score ke basis par aapko **up to 40% tak ka scholarship** mil sakta hai! \n\nAgar aapko hostel facility ki bhi requirement hai, toh woh bhi available hai jiski cost **₹12,000 per month** (food included) hai.\n\nKya aap iske baare mein aur kuch janna chahte hain, ya phir aapke liye ek free 3-day classroom demo pass book kar dein taaki aap hamari faculty aur teaching style ko khud experience kar sakein?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.840458856160138,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.840458856160138,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.840458856160138,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 2133,
+      "createdAt": "2026-11-09T06:15:25.296Z"
+    },
+    {
+      "id": "exec-1794204923143-38",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "Hi, I am Kunal in Class 12 preparing for JEE.",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hi Kunal! Welcome to Apex Academy. Class 12 mein JEE preparation karna ek bahut important step hai, aur aapka focus bilkul sahi time par hai! \n\nBoard exams ke sath JEE Main aur Advanced dono ko manage karne ke liye ek solid strategy aur proper time management ki zaroorat hoti hai. NCERT concepts ko strong rakhna, regular PYQs (Previous Year Questions) solve karna, aur mock tests dena aapki prep ka sabse main part hona chahiye.\n\nAgar aap Apex Academy ke **JEE Main + Advanced Comprehensive Classroom Program** ke baare mein dekh rahe hain, toh iska total tuition fee **₹1,45,000** hai, jise aap 3 easy installments mein pay kar sakte hain:\n* **1st Installment:** ₹50,000 (Admission ke time)\n* **2nd Installment:** ₹50,000 (60 days ke baad)\n* **3rd Installment:** ₹45,000 (120 days ke baad)\n\nAgar aap fee mein scholarship chahte hain, toh aap **Apex Aptitude Test (AAT)** de sakte hain, jisse aapko test score ke basis par **up to 40% tak scholarship** mil sakti hai. Iske alawa, agar aapko hostel facility chahiye, toh woh bhi available hai at **₹12,000 per month** (including food and security).\n\nHamare paas Class 12 / JEE aspirants ke liye batches available hain, jaise:\n- **JEE Target Batch A1 (Morning):** Starts Nov 20, 2026 (Timings: 08:00 AM - 01:30 PM) - *Sirf 8 seats bachi hain!*\n- **JEE Target Jaipur Batch J1:** Starts Nov 25, 2026 (Timings: 09:00 AM - 02:30 PM) - *17 seats available hain.*\n\nMain aapko suggest karunga ki aap hamara **free 3-day classroom demo pass** zaroor try karein, taaki aap hamare experienced IIT-JEE subject mentors ki teaching style ko khud experience kar sakein. \n\nBatayein Kunal, kya main aapke liye koi demo class ya counseling session book karoon?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6563861268955424,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6563861268955424,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.6563861268955424,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 4259,
+      "createdAt": "2026-11-09T06:15:23.143Z"
+    },
+    {
       "id": "exec-1794204143427-304",
       "instituteId": "inst-apex-001",
       "skillName": "answer_enquiry",

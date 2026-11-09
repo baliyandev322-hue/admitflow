@@ -6,7 +6,17 @@ async function runNeonEndToEndTests() {
   console.log('🚀 ADMITFLOW AI — NEON POSTGRESQL END-TO-END VERIFICATION');
   console.log('========================================================================\n');
 
-  process.env.DATABASE_URL = 'postgresql://neondb_owner:npg_dHtwyJgqIc78@ep-summer-glitter-be2q0qyp-pooler.c-9.us-east-2.aws.neon.tech/neondb?sslmode=require';
+  // Use DATABASE_URL from environment / .env.local; fallback to placeholder if not configured
+  if (!process.env.DATABASE_URL) {
+    const fs = await import('fs');
+    const path = await import('path');
+    const envPath = path.resolve(process.cwd(), '.env.local');
+    if (fs.existsSync(envPath)) {
+      const envContent = fs.readFileSync(envPath, 'utf-8');
+      const match = envContent.match(/DATABASE_URL=["']?([^"'\r\n]+)["']?/);
+      if (match) process.env.DATABASE_URL = match[1];
+    }
+  }
   (process.env as any).NODE_ENV = 'production';
 
   // 1. Health Check
