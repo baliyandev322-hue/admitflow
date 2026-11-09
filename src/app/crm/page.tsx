@@ -356,6 +356,15 @@ export default function CrmPage() {
                       <td className="p-3.5 text-indigo-400 font-semibold hover:underline">View</td>
                     </tr>
                   ))}
+                  {leads.length === 0 && (
+                    <tr>
+                      <td colSpan={7} className="p-10 text-center text-slate-500">
+                        <Users className="w-8 h-8 text-slate-700 mx-auto mb-2" />
+                        <div className="font-semibold text-slate-400">No leads found</div>
+                        <div className="text-[11px] text-slate-600 mt-1">Try adjusting your search filter or click &ldquo;+ Add Lead&rdquo; to create one.</div>
+                      </td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </div>

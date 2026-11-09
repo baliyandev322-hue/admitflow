@@ -103586,6 +103586,36 @@
   ],
   "leads": [
     {
+      "id": "lead-chat-1794214079862",
+      "instituteId": "inst-apex-001",
+      "studentName": "Rohan Chat Student",
+      "phone": "+91-9876543210",
+      "email": "rohan.chat@test.com",
+      "status": "LOST",
+      "source": "WEBSITE_CHAT",
+      "leadScore": 75,
+      "whatsappConsent": true,
+      "whatsappConsentAt": "2026-11-09T08:47:59.862Z",
+      "courseId": "course-jee-target",
+      "lastInteractionAt": "2026-11-09T08:47:59.862Z",
+      "createdAt": "2026-11-09T08:47:59.862Z",
+      "updatedAt": "2026-11-09T08:48:00.466Z"
+    },
+    {
+      "id": "lead-journey-1794214076555",
+      "instituteId": "inst-apex-001",
+      "studentName": "Aarav Sprint Test",
+      "phone": "+91-9988112233",
+      "email": "aarav@sprint.com",
+      "status": "LOST",
+      "source": "DIRECT_WALKIN",
+      "leadScore": 80,
+      "courseId": "course-jee-target",
+      "lastInteractionAt": "2026-11-09T08:47:56.555Z",
+      "createdAt": "2026-11-09T08:47:56.556Z",
+      "updatedAt": "2026-11-09T08:48:00.393Z"
+    },
+    {
       "id": "lead-test-1794205841938",
       "instituteId": "inst-apex-001",
       "studentName": "Simulated CRM Lead",
@@ -104163,6 +104193,24 @@
     }
   ],
   "lead_activities": [
+    {
+      "id": "act-1794214079862",
+      "leadId": "lead-chat-1794214079862",
+      "instituteId": "inst-apex-001",
+      "actorType": "SYSTEM",
+      "activityType": "LEAD_CREATED",
+      "description": "New lead created from WEBSITE_CHAT.",
+      "createdAt": "2026-11-09T08:47:59.862Z"
+    },
+    {
+      "id": "act-1794214076556",
+      "leadId": "lead-journey-1794214076555",
+      "instituteId": "inst-apex-001",
+      "actorType": "SYSTEM",
+      "activityType": "LEAD_CREATED",
+      "description": "New lead created from DIRECT_WALKIN.",
+      "createdAt": "2026-11-09T08:47:56.556Z"
+    },
     {
       "id": "act-1794205841939",
       "leadId": "lead-test-1794205841938",
@@ -105589,6 +105637,17 @@
   ],
   "appointments": [
     {
+      "id": "appt-journey-1794214079988",
+      "instituteId": "inst-apex-001",
+      "leadId": "lead-chat-1794214079862",
+      "counsellorId": "user-admin-01",
+      "scheduledAt": "2026-11-10T08:47:59.988Z",
+      "durationMinutes": 30,
+      "mode": "ONLINE_MEET",
+      "status": "SCHEDULED",
+      "createdAt": "2026-11-09T08:47:59.988Z"
+    },
+    {
       "id": "appt-test-1794205845761",
       "instituteId": "inst-apex-001",
       "leadId": "lead-test-1794205841938",
@@ -105944,6 +106003,18 @@
   ],
   "followups": [
     {
+      "id": "follow-journey-1794214080054",
+      "instituteId": "inst-apex-001",
+      "leadId": "lead-chat-1794214079862",
+      "dueDate": "2026-11-09T08:48:00.054Z",
+      "status": "SENT",
+      "channel": "WHATSAPP",
+      "suggestedMessage": "Namaste Rohan, aapka counseling session kal scheduled hai.",
+      "isOverdue": false,
+      "createdAt": "2026-11-09T08:48:00.054Z",
+      "approvedBy": "user-admin-01"
+    },
+    {
       "id": "follow-test-1794205845812",
       "instituteId": "inst-apex-001",
       "leadId": "lead-test-1794205841938",
@@ -106203,6 +106274,47 @@
     }
   ],
   "agent_executions": [
+    {
+      "id": "exec-1794214079802-640",
+      "instituteId": "inst-apex-001",
+      "skillName": "answer_enquiry",
+      "triggeredBy": "AI_AGENT_CORE",
+      "inputPayload": {
+        "query": "What is the total fee for JEE 2027 and can I pay in installments?",
+        "languagePreference": "hinglish"
+      },
+      "outputPayload": {
+        "answer": "Hello! Apex Academy mein aapka swagat hai. Main hoon AdmitFlow AI, aapka admission assistant. \n\nAapne JEE Target 2027 program ke baare mein pucha hai, toh main aapko bilkul clear details de deta hoon:\n\n* **Total Fee:** JEE Main + Advanced 2027 Comprehensive Classroom Program ki total tuition fee **₹1,45,000** hai.\n* **Installment Option:** Haan, aap bilkul installments mein pay kar sakte hain! Yeh fee 3 parts mein divide hoti hai:\n  1. **1st Installment:** ₹50,000 (admission ke time due hoti hai)\n  2. **2nd Installment:** ₹50,000 (admission ke 60 days baad)\n  3. **3rd Installment:** ₹45,000 (120 days baad)\n\nIske alawa, agar aap **Apex Aptitude Test (AAT)** dete hain, toh aapko test score ke basis par **up to 40% tak ka scholarship** bhi mil sakta hai jisse aapki fee aur kam ho sakti hai! \n\nAgar aapko hostel facility ya batches ke timings (jaise hamara Morning Batch ya Jaipur Batch) ke baare mein kuch aur janna ho, toh aap bata sakte hain. Kya aap free 3-day classroom demo pass ya counseling session book karna chahenge?",
+        "isGrounded": true,
+        "modelUsed": "gemini-3.5-flash-lite",
+        "fallbackUsed": false,
+        "sources": [
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.8365820581693555,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.8365820581693555,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          },
+          {
+            "title": "NEET 2027 Test Brochure",
+            "score": 0.8365820581693555,
+            "text": "Apex Career Institute JEE Main + Advanced 2027 Comprehensive Classroom Program. The total tuition fee is ₹1,45,000 payable in 3 installments. First installment is ₹50,000 due at admission. Second installment is ₹50,000 after 60 days. Third installment is ₹45,000 after 120 days. Scholarship up to 40% is available based on Apex Aptitude Test (AAT). Hostel facility is available at ₹12,000 per month including food."
+          }
+        ],
+        "matchedCourse": {
+          "id": "course-jee-target",
+          "name": "Target JEE (Main + Advanced) 2027",
+          "fee": 145000
+        }
+      },
+      "status": "SUCCESS",
+      "executionTimeMs": 3149,
+      "createdAt": "2026-11-09T08:47:59.802Z"
+    },
     {
       "id": "exec-1794206502329-11",
       "instituteId": "inst-apex-001",
@@ -122817,6 +122929,14 @@
   ],
   "conversations": [
     {
+      "id": "conv-journey-1794214080186",
+      "instituteId": "inst-apex-001",
+      "sessionId": "sess-journey-1794214080186",
+      "channel": "WEB_CHAT",
+      "status": "ACTIVE",
+      "createdAt": "2026-11-09T08:48:00.186Z"
+    },
+    {
       "id": "conv-1794203074667-yx92g",
       "instituteId": "inst-apex-001",
       "channel": "WEB_CHAT",
@@ -123610,6 +123730,20 @@
         }
       ],
       "createdAt": "2026-11-09T05:44:40.291Z"
+    },
+    {
+      "id": "msg-u-1794214080252",
+      "conversationId": "conv-journey-1794214080186",
+      "senderType": "STUDENT",
+      "content": "What are the batch timings?",
+      "createdAt": "2026-11-09T08:48:00.252Z"
+    },
+    {
+      "id": "msg-ai-1794214080317",
+      "conversationId": "conv-journey-1794214080186",
+      "senderType": "AI_ASSISTANT",
+      "content": "Morning batch starts at 08:00 AM.",
+      "createdAt": "2026-11-09T08:48:00.317Z"
     }
   ]
 }

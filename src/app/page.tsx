@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 
 export default function HomePage() {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [demoQuery, setDemoQuery] = useState('Bhaiya, JEE Target batch ki fees kitni hai aur demo class kab milegi?');
   const [demoAnswer, setDemoAnswer] = useState<string | null>(
     'Namaste! Apex Academy mein Target JEE (Main + Advanced) 2027 ki base fee ₹1,45,000 hai, jise aap 3 installments mein pay kar sakte hain. One-time payment par flat 5% early bird concession hai. Aapko 3-day free classroom demo pass mil sakta hai. Kya main aapke liye counseling slot book karun?'
@@ -44,21 +45,46 @@ export default function HomePage() {
             <a href="#roi-calculator" className="hover:text-white transition-colors">ROI Calculator</a>
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <Link 
               href="/login" 
-              className="px-4 py-2 text-sm font-semibold text-slate-300 hover:text-white transition-colors"
+              className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-colors"
             >
               Sign In
             </Link>
             <Link 
               href="/signup" 
-              className="px-5 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white shadow-lg shadow-indigo-500/25 transition-all hover:shadow-indigo-500/40"
+              className="px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white shadow-lg shadow-indigo-500/25 transition-all hover:shadow-indigo-500/40"
             >
               Start Free Trial
             </Link>
+            <button
+              type="button"
+              onClick={() => setMobileNavOpen(prev => !prev)}
+              className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white md:hidden"
+              title="Toggle Navigation"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {mobileNavOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
+
+        {/* Mobile Navigation Drawer */}
+        {mobileNavOpen && (
+          <div className="md:hidden mt-3 pt-3 border-t border-slate-800/80 flex flex-col space-y-2 text-sm text-slate-300">
+            <a href="#features" onClick={() => setMobileNavOpen(false)} className="px-3 py-2 rounded-lg hover:bg-slate-900 hover:text-white">Features</a>
+            <a href="#how-it-works" onClick={() => setMobileNavOpen(false)} className="px-3 py-2 rounded-lg hover:bg-slate-900 hover:text-white">How It Works</a>
+            <a href="#comparison" onClick={() => setMobileNavOpen(false)} className="px-3 py-2 rounded-lg hover:bg-slate-900 hover:text-white">Comparison</a>
+            <a href="#pricing" onClick={() => setMobileNavOpen(false)} className="px-3 py-2 rounded-lg hover:bg-slate-900 hover:text-white">Pricing</a>
+            <a href="#roi-calculator" onClick={() => setMobileNavOpen(false)} className="px-3 py-2 rounded-lg hover:bg-slate-900 hover:text-white">ROI Calculator</a>
+          </div>
+        )}
       </header>
 
       {/* 2. HERO SECTION */}
