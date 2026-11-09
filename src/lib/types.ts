@@ -300,6 +300,27 @@ export interface SalesActivity {
   createdAt: string;
 }
 
+export interface Conversation {
+  id: string;
+  instituteId: string;
+  leadId?: string;
+  channel: 'WEB_CHAT' | 'WHATSAPP';
+  sessionId: string;
+  status: 'ACTIVE' | 'CLOSED';
+  createdAt: string;
+  updatedAt?: string;
+}
+
+export interface ChatMessage {
+  id: string;
+  conversationId: string;
+  senderType: 'STUDENT' | 'AI_ASSISTANT' | 'COUNSELLOR';
+  content: string;
+  ragSources?: any[];
+  toolCalls?: any[];
+  createdAt: string;
+}
+
 export interface PilotIssue {
   id: string;
   issue: string;

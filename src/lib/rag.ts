@@ -1,5 +1,6 @@
 import { db } from './db';
 import { DocumentChunk, KnowledgeDocument } from './types';
+import { gemini } from './gemini';
 
 // Natural language tokenizer for Hinglish, Hindi, and English
 function tokenize(text: string): string[] {
@@ -12,7 +13,7 @@ function tokenize(text: string): string[] {
 
 // Cosine similarity between two float vectors
 export function cosineSimilarity(vecA: number[], vecB: number[]): number {
-  if (vecA.length !== vecB.length) return 0;
+  if (!vecA || !vecB || vecA.length !== vecB.length || vecA.length === 0) return 0;
   let dotProduct = 0;
   let normA = 0;
   let normB = 0;
@@ -41,43 +42,77 @@ export function chunkText(text: string, chunkSize = 350, overlap = 50): string[]
   return chunks;
 }
 
-// Generate vector embedding (uses Gemini API if available, or deterministically generates normalized semantic vectors)
+export interface EmbeddingResult {
+  embedding: number[];
+  dimensions: number;
+  provider: 'GEMINI_API' | 'DETERMINISTIC_FALLBACK';
+  model: string;
+}
+
+/**
+ * Generate vector embedding using Google Gemini API (`models/gemini-embedding-001`),
+ * or deterministically generate a normalized 768-dimensional semantic feature vector.
+ */
 export async function generateEmbedding(text: string): Promise<number[]> {
-  const geminiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
-  if (geminiKey) {
+  const result = await generateEmbeddingWithDetails(text);
+  return result.embedding;
+}
+
+export async function generateEmbeddingWithDetails(text: string): Promise<EmbeddingResult> {
+  const geminiKey = gemini.getApiKey();
+  const targetDim = 768; // Industry-standard 768-dimension embeddings
+
+  if (geminiKey && geminiKey.length > 10) {
     try {
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=${geminiKey}`, {
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${geminiKey}`;
+      const res = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: 'models/text-embedding-004',
-          content: { parts: [{ text }] }
+          model: 'models/gemini-embedding-001',
+          content: { parts: [{ text }] },
+          outputDimensionality: targetDim
         })
       });
+
       if (res.ok) {
         const data = await res.json();
-        if (data.embedding?.values) {
-          return data.embedding.values;
+        if (data.embedding?.values && data.embedding.values.length > 0) {
+          return {
+            embedding: data.embedding.values,
+            dimensions: data.embedding.values.length,
+            provider: 'GEMINI_API',
+            model: 'gemini-embedding-001'
+          };
         }
+      } else {
+        const errData = await res.json().catch(() => ({}));
+        console.warn(`[RAG Embedding API Warning] HTTP ${res.status}: ${errData.error?.message || 'Unknown error'}. Falling back to 768-dim deterministic vector.`);
       }
-    } catch (e) {
-      console.warn('Gemini embedding failed, falling back to semantic hash vector:', e);
+    } catch (e: any) {
+      console.warn(`[RAG Embedding Network Warning] ${e.message}. Falling back to 768-dim deterministic vector.`);
     }
   }
 
-  // High-dimensional semantic feature vector fallback (dimension = 64)
-  const dim = 64;
-  const vec = new Array(dim).fill(0);
+  // Consistent 768-dimensional semantic feature vector fallback
+  const vec = new Array(targetDim).fill(0);
   const tokens = tokenize(text);
   for (const token of tokens) {
     for (let j = 0; j < token.length; j++) {
-      const idx = (token.charCodeAt(j) * 31 + j) % dim;
+      const idx = (token.charCodeAt(j) * 31 + j * 7) % targetDim;
       vec[idx] += 1;
     }
   }
   // Normalize vector to unit length
   const norm = Math.sqrt(vec.reduce((sum, v) => sum + v * v, 0));
-  return norm > 0 ? vec.map(v => v / norm) : vec;
+  const normalizedVec = norm > 0 ? vec.map(v => v / norm) : vec;
+
+  return {
+    embedding: normalizedVec,
+    dimensions: targetDim,
+    provider: 'DETERMINISTIC_FALLBACK',
+    model: 'deterministic-semantic-768'
+  };
 }
 
 export interface RagRetrievalResult {
@@ -181,4 +216,37 @@ export async function indexDocument(
 
   db.addKnowledgeDoc(doc, chunks);
   return doc;
+}
+
+/**
+ * Reindexes all existing documents for an institute to ensure uniform 768-dim embeddings.
+ */
+export async function reindexAllDocuments(instituteId: string): Promise<{ reindexedCount: number; chunksCount: number }> {
+  const docs = db.getKnowledgeDocs(instituteId);
+  let totalChunks = 0;
+
+  for (const doc of docs) {
+    if (doc.rawContent) {
+      const textChunks = chunkText(doc.rawContent);
+      const newChunks: DocumentChunk[] = [];
+      for (let i = 0; i < textChunks.length; i++) {
+        const chunkContent = textChunks[i];
+        const embedding = await generateEmbedding(chunkContent);
+        const keywords = tokenize(chunkContent).slice(0, 8);
+        newChunks.push({
+          id: `chunk-${doc.id}-${i}`,
+          documentId: doc.id,
+          instituteId,
+          chunkIndex: i,
+          content: chunkContent,
+          embedding,
+          keywords
+        });
+      }
+      db.addKnowledgeDoc({ ...doc, chunkCount: newChunks.length, status: 'INDEXED' }, newChunks);
+      totalChunks += newChunks.length;
+    }
+  }
+
+  return { reindexedCount: docs.length, chunksCount: totalChunks };
 }

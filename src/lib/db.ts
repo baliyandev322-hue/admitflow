@@ -6,7 +6,8 @@ import {
   KnowledgeDocument, DocumentChunk, Lead, 
   LeadActivity, Appointment, Followup, 
   AgentExecution, Subscription, StudentDocument, IntegrationSetting,
-  SalesProspect, SalesActivity, PilotTrackingRecord
+  SalesProspect, SalesActivity, PilotTrackingRecord,
+  Conversation, ChatMessage
 } from './types';
 
 interface DatabaseSchema {
@@ -28,6 +29,8 @@ interface DatabaseSchema {
   sales_prospects?: SalesProspect[];
   sales_activities?: SalesActivity[];
   pilot_tracking?: PilotTrackingRecord[];
+  conversations?: Conversation[];
+  messages?: ChatMessage[];
 }
 
 const DB_FILE = path.join(process.cwd(), 'data', 'admitflow_db.json');
@@ -675,7 +678,9 @@ function generateSeedData(): DatabaseSchema {
     integration_settings,
     sales_prospects: [],
     sales_activities: [],
-    pilot_tracking: []
+    pilot_tracking: [],
+    conversations: [],
+    messages: []
   };
 }
 
@@ -1151,6 +1156,103 @@ export class Database {
     }
     this.persist();
     return record;
+  }
+
+  // ==========================================
+  // Conversations & Multi-Turn Message Persistence
+  // ==========================================
+
+  public getConversations(instituteId: string): Conversation[] {
+    this.data.conversations = this.data.conversations || [];
+    return this.data.conversations
+      .filter(c => c.instituteId === instituteId)
+      .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+  }
+
+  public getConversationById(id: string): Conversation | undefined {
+    this.data.conversations = this.data.conversations || [];
+    return this.data.conversations.find(c => c.id === id);
+  }
+
+  public findConversationBySession(instituteId: string, sessionId: string): Conversation | undefined {
+    this.data.conversations = this.data.conversations || [];
+    return this.data.conversations.find(c => c.instituteId === instituteId && c.sessionId === sessionId);
+  }
+
+  public createConversation(conv: Conversation): Conversation {
+    this.data.conversations = this.data.conversations || [];
+    const existing = this.data.conversations.find(c => c.id === conv.id || (c.instituteId === conv.instituteId && c.sessionId === conv.sessionId));
+    if (existing) return existing;
+    this.data.conversations.unshift(conv);
+    this.persist();
+
+    // Async sync to PostgreSQL if connected
+    if (process.env.DATABASE_URL) {
+      import('./db/postgresPool').then(({ getPostgresPool }) => {
+        const pool = getPostgresPool();
+        pool.query(`
+          INSERT INTO conversations (id, institute_id, lead_id, channel, session_id, status, created_at)
+          VALUES ($1, $2, $3, $4, $5, $6, $7)
+          ON CONFLICT (id) DO NOTHING;
+        `, [conv.id, conv.instituteId, conv.leadId || null, conv.channel || 'WEB_CHAT', conv.sessionId, conv.status || 'ACTIVE', conv.createdAt])
+        .catch(err => console.warn('[Postgres Conversation Sync]', err.message));
+      }).catch(() => {});
+    }
+
+    return conv;
+  }
+
+  public updateConversation(id: string, updates: Partial<Conversation>): Conversation | null {
+    this.data.conversations = this.data.conversations || [];
+    const idx = this.data.conversations.findIndex(c => c.id === id);
+    if (idx === -1) return null;
+    this.data.conversations[idx] = { 
+      ...this.data.conversations[idx], 
+      ...updates, 
+      updatedAt: new Date().toISOString() 
+    };
+    this.persist();
+    return this.data.conversations[idx];
+  }
+
+  public getMessages(conversationId: string): ChatMessage[] {
+    this.data.messages = this.data.messages || [];
+    return this.data.messages
+      .filter(m => m.conversationId === conversationId)
+      .sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
+  }
+
+  public addMessage(msg: ChatMessage): ChatMessage {
+    this.data.messages = this.data.messages || [];
+    // Deduplication check
+    const existing = this.data.messages.find(m => m.id === msg.id);
+    if (existing) return existing;
+
+    this.data.messages.push(msg);
+    this.persist();
+
+    // Async sync to PostgreSQL if connected
+    if (process.env.DATABASE_URL) {
+      import('./db/postgresPool').then(({ getPostgresPool }) => {
+        const pool = getPostgresPool();
+        pool.query(`
+          INSERT INTO messages (id, conversation_id, sender_type, content, rag_sources, tool_calls, created_at)
+          VALUES ($1, $2, $3, $4, $5, $6, $7)
+          ON CONFLICT (id) DO NOTHING;
+        `, [
+          msg.id, 
+          msg.conversationId, 
+          msg.senderType, 
+          msg.content, 
+          JSON.stringify(msg.ragSources || []), 
+          JSON.stringify(msg.toolCalls || []), 
+          msg.createdAt
+        ])
+        .catch(err => console.warn('[Postgres Message Sync]', err.message));
+      }).catch(() => {});
+    }
+
+    return msg;
   }
 
   // Engine & Health Verification

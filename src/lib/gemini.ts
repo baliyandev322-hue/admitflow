@@ -134,6 +134,95 @@ export class GeminiService {
       };
     }
   }
+
+  /**
+   * Real-time streaming generator for LLM responses using Gemini Server-Sent Events (SSE).
+   */
+  public async *streamText(
+    prompt: string,
+    options: GeminiGenerateOptions = {}
+  ): AsyncGenerator<string, void, unknown> {
+    if (!this.isAvailable()) {
+      yield 'Live Gemini API key is not configured. Operating in deterministic offline mode.';
+      return;
+    }
+
+    const model = options.model || this.defaultModel;
+    const temperature = options.temperature ?? 0.3;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${this.apiKey}`;
+
+    const contents: any[] = [];
+    if (options.systemInstruction) {
+      contents.push({
+        role: 'user',
+        parts: [{ text: `SYSTEM DIRECTIVE: ${options.systemInstruction}` }]
+      });
+      contents.push({
+        role: 'model',
+        parts: [{ text: 'Understood. I will strictly obey these directives.' }]
+      });
+    }
+
+    contents.push({
+      role: 'user',
+      parts: [{ text: prompt }]
+    });
+
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents,
+          generationConfig: {
+            temperature,
+            maxOutputTokens: options.maxOutputTokens || 600
+          }
+        })
+      });
+
+      if (!res.ok) {
+        throw new Error(`Gemini Stream API returned HTTP ${res.status}`);
+      }
+
+      const reader = res.body?.getReader();
+      if (!reader) {
+        throw new Error('No readable stream body returned');
+      }
+
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || ''; // Keep last incomplete line
+
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (trimmed.startsWith('data: ')) {
+            const jsonStr = trimmed.substring(6).trim();
+            if (jsonStr === '[DONE]') return;
+            try {
+              const data = JSON.parse(jsonStr);
+              const textChunk = data.candidates?.[0]?.content?.parts?.[0]?.text;
+              if (textChunk) {
+                yield textChunk;
+              }
+            } catch {
+              // Incomplete or non-JSON chunk
+            }
+          }
+        }
+      }
+    } catch (err: any) {
+      console.warn(`[Gemini Stream Warning] ${err.message}. Streaming fallback.`);
+      yield 'Maaf kijiye, temporary connection error aaya hai. Kripya punah prayas karein.';
+    }
+  }
 }
 
 export const gemini = GeminiService.getInstance();
