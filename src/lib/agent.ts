@@ -64,15 +64,27 @@ export class AgentOrchestrator {
       const coursesSummary = courses.map(c => `${c.name} (Code: ${c.code}): Base Fee ₹${c.baseFee.toLocaleString('en-IN')}, Min Installment ₹${c.minInstallmentFee.toLocaleString('en-IN')}, Duration: ${c.durationWeeks} weeks`).join('\n');
       const batchesSummary = batches.map(b => `${b.batchName}: Starts ${b.startDate}, Timings ${b.timings}, Seats Left: ${b.maxSeats - b.enrolledCount}`).join('\n');
 
-      const systemInstruction = `You are AdmitFlow AI, the professional and helpful admission assistant for "${institute.name}".
-Your task is to answer student and parent admission enquiries accurately.
+      const systemInstruction = `You are AdmitFlow AI, the professional and empathetic admission assistant & educational mentor for "${institute.name}".
+Your goal is to guide students and parents with high academic intelligence, practical guidance, and absolute honesty.
 
-CRITICAL RULES:
-1. Base your answer STRICTLY on the verified context below.
-2. NEVER invent or hallucinate course fees, seat counts, deadlines, or scholarship rules.
-3. If the query asks for information NOT present in the verified context, state clearly that you do not have that specific detail in the current prospectus and offer to connect them with a human admission counselor.
-4. Respond naturally in ${languagePreference.toUpperCase()} (Hinglish = Hindi written in English script with casual natural tone, Hindi = Devanagari script, English = clear professional English).
-5. Always offer to book a free counseling slot or trial demo class.`;
+THREE KNOWLEDGE CATEGORIES & POLICIES:
+1. VERIFIED INSTITUTE KNOWLEDGE (Courses, Fees, Batches, Admission Rules, Facilities, Faculty):
+   - Base all institute-specific information (course fees, installments, batch dates) STRICTLY on the verified institute context below.
+   - ZERO HALLUCINATION POLICY: NEVER invent course fees, exact hostel charges, fake batch schedules, or fabricated faculty names.
+   - If an institute-specific detail (such as exact hostel fee or specific faculty roster) is NOT in the verified context, clearly state that this specific detail is not in the current prospectus, and offer to connect them with a human admission counselor.
+   - If asked "Who are your best teachers?", do NOT fabricate individual teacher names; explain that our faculty consists of experienced IIT-JEE/NEET subject specialists and mentors, and invite the student to attend a free trial demo class to experience their teaching firsthand.
+
+2. GENERAL EDUCATIONAL KNOWLEDGE (Preparation strategies, Exam patterns, Career guidance, Coaching benefits):
+   - For educational guidance (e.g. "How should I prepare for JEE?", "What is the difference between JEE Main and Advanced?", "What are the benefits of coaching?"), provide rich, practical, motivating academic advice based on standard pedagogy (NCERT concepts, PYQs, mock tests, time management, structured discipline).
+   - For selection guarantees (e.g. "Can you guarantee my selection?"): Be strictly honest and ethical. State clearly that NO coaching institute can guarantee selection; selection depends 100% on the student's personal dedication, consistent practice, and discipline, supported by institute mentorship and mock tests.
+   - For competitor comparison ("Why choose this institute over competitors?"): Highlight pedagogical strengths (small batch sizes, personalized doubt resolution, regular mock tests, concept-focused teaching) and offer a free counseling or trial class without disparaging competitors.
+
+3. UNRELATED QUESTIONS:
+   - If the query is completely unrelated to education, studies, exams, career, or institute admission (e.g. recipes, cinema, sports gossip, politics), politely state your role as an educational and admission counselor and guide them back to their academic preparation.
+
+LANGUAGE & TONE:
+- Respond naturally and conversationally in ${languagePreference.toUpperCase()} (Hinglish = conversational everyday Hindi written in English script; English = clear professional English; Hindi = Devanagari script).
+- Keep responses concise, warm, helpful, and encourage booking a free counseling session or demo class when appropriate.`;
 
       const prompt = `STUDENT QUERY: "${query}"
 
@@ -90,8 +102,8 @@ Respond directly to the student in ${languagePreference}:`;
       // 3. Call Live Gemini Service
       const geminiRes = await gemini.generateText(prompt, {
         systemInstruction,
-        temperature: 0.2, // High precision
-        maxOutputTokens: 300
+        temperature: 0.25,
+        maxOutputTokens: 800
       });
 
       if (geminiRes.text && !geminiRes.fallbackUsed) {
@@ -108,6 +120,48 @@ Respond directly to the student in ${languagePreference}:`;
           } else {
             groundedAnswer = `${institute.name} mein ${matchedCourse.name} ki total base fee ₹${matchedCourse.baseFee.toLocaleString('en-IN')} hai. Isko aap 3 installments mein pay kar sakte hain (minimum first installment ₹${matchedCourse.minInstallmentFee.toLocaleString('en-IN')}). Kya aap batch timings ya counseling session ke baare mein jaanna chahenge?`;
           }
+        } else if (qLower.includes('difference') && (qLower.includes('main') || qLower.includes('advanced'))) {
+          // General Educational: JEE Main vs Advanced
+          isGrounded = false;
+          groundedAnswer = languagePreference === 'english'
+            ? `JEE Main and JEE Advanced have distinct objectives: 1) JEE Main is the screening test for NITs, IIITs, and CFTIs, focusing on speed, broad syllabus coverage, and accuracy. 2) JEE Advanced is exclusively for admission to IITs, testing deep multi-concept problem-solving and higher analytical depth. Would you like to discuss our focused preparation batches?`
+            : `JEE Main aur JEE Advanced mein 2 main differences hain: 1) JEE Main NITs, IIITs aur CFTIs mein admission ke liye hota hai aur yeh speed aur syllabus coverage test karta hai. 2) JEE Advanced exclusively IITs ke liye hota hai jisme deep conceptual problem-solving test hoti hai. Kya aap hamare integrated JEE batch ke baare mein jaanna chahenge?`;
+        } else if (qLower.includes('how should i prepare') || qLower.includes('how to prepare') || qLower.includes('prepare for jee') || qLower.includes('taiyari kaise')) {
+          // General Educational: Preparation guidance
+          isGrounded = false;
+          groundedAnswer = languagePreference === 'english'
+            ? `To prepare effectively for JEE: 1) Build strong conceptual foundation using NCERT and core material. 2) Practice daily numerical problems and Previous Year Questions (PYQs). 3) Take regular timed mock tests to analyze weak areas. 4) Maintain consistent revision. Would you like to book a free 1-on-1 counseling session with our mentors?`
+            : `JEE ki best preparation strategy: 1) NCERT aur core concepts ko strong karein, 2) Daily numericals aur Previous Year Questions (PYQs) solve karein, 3) Regular timed mock tests dekar apni mistakes ko analyze karein, 4) Consistent daily routine aur revision maintain karein. Kya aap hamare expert mentors ke saath ek free counseling session book karna chahte hain?`;
+        } else if (qLower.includes('guarantee') || qLower.includes('selection guarantee')) {
+          // General Educational: Ethical guarantee stance
+          isGrounded = false;
+          groundedAnswer = languagePreference === 'english'
+            ? `No honest coaching institute can guarantee selection. Final selection depends entirely on the student's hard work, regular practice, and self-discipline. Our institute guarantees top-tier faculty guidance, rigorous test series, and personalized doubt support to give you the highest probability of success. Would you like to attend a demo class?`
+            : `Nahi, koi bhi honest institute selection ki guarantee nahi de sakta. Selection 100% student ki mehnat, consistency aur self-discipline par depend karta hai. ${institute.name} mein hum aapko best faculty guidance, daily doubt clearing aur structured mock tests provide karte hain taaki aapka potential maximize ho sake. Kya aap demo class dekhna chahenge?`;
+        } else if (qLower.includes('benefit') && qLower.includes('coaching')) {
+          // General Educational: Coaching benefits
+          isGrounded = false;
+          groundedAnswer = languagePreference === 'english'
+            ? `Coaching provides: 1) Structured curriculum and disciplined timetable, 2) Instant doubt resolution with expert faculty, 3) Curated high-yield study material, 4) National-level peer benchmark through regular mock tests. Would you like to experience a demo session at ${institute.name}?`
+            : `Coaching ke mukhya fayde: 1) Structured study routine aur discipline, 2) Experienced faculty se quick doubt resolution, 3) Exam-oriented curated material, 4) Regular mock tests jisse aapko apni all-India ranking aur weak areas ka pata chalta hai. Kya aap ${institute.name} mein demo class try karna chahenge?`;
+        } else if (qLower.includes('best teacher') || qLower.includes('best faculty') || (qLower.includes('who') && qLower.includes('teacher'))) {
+          // Category 1 & 2: Faculty query
+          isGrounded = false;
+          groundedAnswer = languagePreference === 'english'
+            ? `At ${institute.name}, our faculty consists of highly experienced subject matter experts and senior IIT-JEE/NEET mentors dedicated to concept clarity and individual doubt support. We invite you to attend a free trial demo lecture to interact with our teachers directly!`
+            : `${institute.name} mein sabhi subjects ke liye highly qualified aur experienced faculty members hain jo IIT-JEE aur NEET ke dedicated mentors hain. Har teacher concept building aur doubt clearing par focus karte hain. Aap unke teaching methodology ko dekhne ke liye ek free trial demo class attend kar sakte hain!`;
+        } else if (qLower.includes('hostel')) {
+          // Category 1: Specific Hostel fee query
+          isGrounded = false;
+          groundedAnswer = languagePreference === 'english'
+            ? `Exact hostel and mess charges are not specified in our general prospectus, as they vary based on room sharing preferences (AC/Non-AC, single/double occupancy). Our admission team can provide current hostel partner tariffs—would you like our counselor to call you?`
+            : `Hamare current prospectus mein hostel fees ki exact amount listed nahi hai kyunki hostel charges room type (AC/Non-AC, single/double sharing) par depend karte hain. Hamare admission counselor aapko hostel options aur tariffs directly share kar sakte hain. Kripya apna phone number drop karein!`;
+        } else if (qLower.includes('why should i join') || qLower.includes('why join') || qLower.includes('competitor') || qLower.includes('choose this institute')) {
+          // Category 1 & 2: Why join / Competitors
+          isGrounded = false;
+          groundedAnswer = languagePreference === 'english'
+            ? `You should choose ${institute.name} for our student-centric focus: compact batch sizes, dedicated daily doubt sessions, comprehensive study modules, and regular performance benchmarking. We focus entirely on student transformation rather than marketing claims. Would you like to schedule a free counseling session?`
+            : `${institute.name} ko chunne ke sabse bade kaaran hain: small batch sizes, daily dedicated doubt clearing, scientifically designed study modules aur regular performance tracking. Hum har student par personal attention dete hain. Kya aap ek free demo class ya counseling session book karna chahenge?`;
         } else if (sources.length > 0) {
           isGrounded = true;
           const topSource = sources[0];
