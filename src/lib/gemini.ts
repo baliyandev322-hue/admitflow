@@ -14,6 +14,35 @@ export interface GeminiGenerateOptions {
   systemInstruction?: string;
 }
 
+/**
+ * Helper to safely extract and concatenate all text parts from Gemini API candidates.
+ * Handles single part, multiple parts, empty parts, missing text fields, and empty responses.
+ */
+export function extractTextFromGeminiResponse(data: any): string {
+  if (!data || typeof data !== 'object') {
+    throw new Error('Empty response from Gemini API: invalid data object');
+  }
+  const candidate = data.candidates?.[0];
+  if (!candidate) {
+    throw new Error('Empty response from Gemini API: no candidate returned');
+  }
+  const parts = candidate.content?.parts;
+  if (!Array.isArray(parts) || parts.length === 0) {
+    throw new Error('Empty response from Gemini API: no parts found');
+  }
+
+  // Combine all text parts without losing content
+  const text = parts
+    .map((p: any) => (p && typeof p.text === 'string' ? p.text : ''))
+    .join('')
+    .trim();
+
+  if (!text) {
+    throw new Error('Empty response from Gemini API: text parts are empty');
+  }
+  return text;
+}
+
 export class GeminiService {
   private static instance: GeminiService;
   private apiKey: string;
@@ -114,13 +143,10 @@ export class GeminiService {
       }
 
       const data = await res.json();
-      const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (!generatedText) {
-        throw new Error('Empty response from Gemini API');
-      }
+      const generatedText = extractTextFromGeminiResponse(data);
 
       return {
-        text: generatedText.trim(),
+        text: generatedText,
         modelUsed: model,
         fallbackUsed: false
       };
@@ -208,9 +234,13 @@ export class GeminiService {
             if (jsonStr === '[DONE]') return;
             try {
               const data = JSON.parse(jsonStr);
-              const textChunk = data.candidates?.[0]?.content?.parts?.[0]?.text;
-              if (textChunk) {
-                yield textChunk;
+              const parts = data.candidates?.[0]?.content?.parts;
+              if (Array.isArray(parts)) {
+                for (const part of parts) {
+                  if (part && typeof part.text === 'string' && part.text) {
+                    yield part.text;
+                  }
+                }
               }
             } catch {
               // Incomplete or non-JSON chunk

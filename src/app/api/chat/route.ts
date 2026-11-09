@@ -15,20 +15,26 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const sessionId = searchParams.get('sessionId');
     const conversationId = searchParams.get('conversationId');
-    const instituteId = searchParams.get('instituteId');
+    let resolvedInstituteId = searchParams.get('instituteId');
+    const instituteSlug = searchParams.get('instituteSlug') || searchParams.get('slug');
 
-    if (!instituteId) {
-      return NextResponse.json({ error: 'instituteId is required' }, { status: 400 });
+    if (!resolvedInstituteId && instituteSlug) {
+      const inst = db.getInstituteBySlug(instituteSlug);
+      if (inst) resolvedInstituteId = inst.id;
+    }
+
+    if (!resolvedInstituteId) {
+      return NextResponse.json({ error: 'instituteId or instituteSlug is required' }, { status: 400 });
     }
 
     let conversation: Conversation | undefined;
     if (conversationId) {
       conversation = db.getConversationById(conversationId);
     } else if (sessionId) {
-      conversation = db.findConversationBySession(instituteId, sessionId);
+      conversation = db.findConversationBySession(resolvedInstituteId, sessionId);
     }
 
-    if (!conversation || conversation.instituteId !== instituteId) {
+    if (!conversation || conversation.instituteId !== resolvedInstituteId) {
       return NextResponse.json({
         success: true,
         conversation: null,
